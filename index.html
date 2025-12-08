@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetNest</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <ul class="menu">
+                <li>
+                    <a href="/">
+                        <img src="img/logopet.png" alt="logo-pet" width="100" class="logotipo"></a>
+                </li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#perguntas">Perguntas Frequentes</a></li>
+                <li><a href="#adote">Adote</a></li>
+                <li><a href="#sinalizar">Sinalizar</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="conteudo">
+        <section class="bem-vindo">
+
+            <div class="principal">
+                <div>
+                    <h1>Bem-Vindos a PetNest</h1>
+                    <h2 class="subtitulo">Seu melhor amigo, nossa missão</h2>
+                    <p>Amor, cuidado e carinho para o seu melhor amigo</p>
+                </div>
+
+                <div class="mulher-com-cachorro">
+                    <img class="imagem-mulher-cachorro" width='300' src="img/mulher-com-cachorro.png" alt="mulher-com-cachorro-no-colo">
+                </div>
+            </div>
+        </section>
+
+        <h2>Por que Adotar?</h2>
+        <section id="adote">
+            <article>
+                <div class="circulo">
+                    <h3>Não existe recompensa maior</h3>
+                    <img class="imagem" src="img/moça-abracando o cachorro.jpg" alt="moça-abraçando-pet">
+                    <p class="eclipse">de vê-los alegre saudável com seu novo lar.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="circulo">
+                    <h3>Pensando bem, você pode?</h3>
+                    <img class="imagem" src="img/pessoas-com-pet.jpg" alt="pessoas-com-seus-pet">
+                    <p>Mudar o destino de um animal de rua.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="circulo">
+                    <h3>Neste momento</h3>
+                    <img class="imagem" src="img/rapaz-passeando-com-cachorro.png" alt="rapaz-passeando-com-seu-pet">
+                    <p>Milhares de animal estão esperando um humano para chamar de seu.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="circulo">
+                    <h3>Motivos para Adotar</h3>
+                    <img class="imagem" src="img/moça-brincando-pets.png" alt="moça-brincando-seus-pet-em-casa">
+                    <p>Adotar um pet é transformar uma vida você oferece amor, segurança.</p>
+                </div>
+            </article>
+
+        </section>
+        <button>Adote</button>
+
+        <section id="sobre">
+            <h4>Sobre Nós</h4>
+
+            <p>A PetNest nasceu com o propósito de criar um espaço onde pets encontrem cuidado, carinho e informação de
+                qualidade.</p>
+
+            <p>Acreditamos que cada animal merece uma vida saudável, segura e cheia de afeto e que a
+                adoção é uma das formas mais bonitas de transformar vidas.</p>
+
+            <p>Com principal objetivo incentivar sinalização de animais abandonados, pois informar sobre um pet em
+                situação de risco é um ato de proteção e responsabilidade. Através dessa atitude, aumentamos as chances
+                de resgate, cuidados adequados e, quem sabe, um novo lar cheio de amor.</p>
+
+            <p>Oferecemos conteúdos educativos, na PetNest acreditamos que cada animal merece um lar e estamos aqui para
+                apoiar quem decide fazer a diferença.</p>
+
+            <p>Assiste vídeo abaixo e evite este tipo de situação:</p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rFiZEm0ww8k?si=l-scI7546DiM-h9R"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </section>
+
+        <!-- formulario com os campo para sinalizar -->
+        <section id="sinalizar">
+            <img src="img/icone-sinalizar.png" alt="bandeira-de-sinalizar" width="50">
+            <h4>Sinalizar</h4>
+            <form name="cadastro" method="post" action="">
+                <!-- campos de botoes -->
+                <fieldset id="dados-basicos">
+                    <legend>Dados básicos</legend>
+
+                    <div id="nome">
+                        <label for="name">Nome</label>
+
+                        <input type="text" placeholder="Digite seu nome e sobrenome" required id="name">
+                    </div>
+
+                    <div id="telefone">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" placeholder="99-99999-9999" required="required"
+                            pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+                    </div>
+
+                    <div id="sexo">
+                        <label for="sexo">Sexo do animal:</label>
+                        <select id="sexo" name="sexo">
+                            <option disabled selected>Escolha uma opção</option>
+                            <option value="macho">Macho</option>
+                            <option value="femea">Fêmea</option>
+                        </select>
+                    </div>
+
+                    <div id="tipo">
+                        <label for="tipo">Tipo</label>
+                        <select id="tipo" name="tipo">
+                            <option disabled selected>Escolha uma opção</option>
+                            <option value="gato">Gato</option>
+                            <option value="cachorro">Cachorro</option>
+                        </select>
+                    </div>
+
+                    <div id="porte">
+                        <label>Porte:</label>
+
+                        <input type="radio" id="pequeno" name="porte" value="pequeno">
+                        <label for="pequeno">Pequeno</label>
+
+                        <input type="radio" id="medio" name="porte" value="medio">
+                        <label for="medio">Médio</label>
+
+                        <input type="radio" id="grande" name="porte" value="grande">
+                        <label for="grande">Grande</label><br><br>
+                    </div>
+
+                    <div id="descricao">
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao" name="descricao" rows="10" cols="40"></textarea>
+                    </div>
+
+                    <div id="meufile">
+                        <label for="meufile">Selecione uma foto do animal:</label>
+                        <input type="file" id="meufile" name="meufile">
+                    </div>
+                </fieldset>
+
+                <fieldset id="localizacao">
+                    <legend>Localização</legend>
+
+                    <div id="rua">
+                        <label for="rua">Rua</label>
+                        <input type="text" placeholder="Nome da rua" required id="rua">
+                    </div>
+
+                    <div id="numero">
+                        <label for="numero">Número</label>
+                        <input type="text" placeholder="Numero do local" required id="numero">
+                    </div>
+
+                    <div id="bairro">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" placeholder="Nome do bairro" required id="bairro">
+                    </div>
+
+                    <div id="cidade">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" placeholder="Cidade" required id="cidade">
+                    </div>
+
+                    <div id="estado">
+
+                        <label for="estado">Estado</label>
+
+                        <select id="estado" name="estado">
+                            <option disabled selected>Selecione</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                        </select>
+                    </div>
+
+                    <div id="cep">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000">
+                    </div>
+                </fieldset>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+
+        <section id="perguntas">
+            <h4>Perguntas Frequentes (FAQ)</h4>
+
+            <article>
+                <h5>Onde denunciar maus tratos?</h5>
+                <p>A denúncia pode ser feita pela Polícia Militar no 190, pela Delegacia de Polícia Civil ou pelo
+                    aplicativo Proteção Animal (caso seu estado ofereça).</p>
+            </article>
+
+            <article>
+                <h5>Vocês fazem resgates?</h5>
+                <p>No momento não realizamos resgates, mas podemos orientar e indicar protetores independentes ou ONGs
+                    da sua região.</p>
+            </article>
+
+            <article>
+                <h5>Como posso adotar um animal?</h5>
+                <p>Você pode preencher nosso formulário de adoção e nossa equipe entrará em contato para orientar toda a
+                    etapa de avaliação e escolha do pet ideal.</p>
+            </article>
+
+            <article>
+                <h5>Vocês têm abrigo físico?</h5>
+                <p>Não, trabalhamos com lares temporários e rede de protetores parceiros.</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Todos Direitos Reservados</p>
+        <p>&copy; 2026 - PetNest</p>
+        <p>Desenvolvido por Juliana Miranda | Estudante de Tecnologia</p>
+        <h6>Links</h6>
+        <ul>
+            <li><a href="#adote">Adote</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#perguntas">FAQ</a></li>
+            <li><a href="#sinalizar">Sinalizar</a></li>
+        </ul>
+
+        <div class="redes">
+            <h6>Redes</h6>
+            <a href="https://github.com/JulianaMiranda02" target="_blank">
+                <img src="img/github.png" alt="GitHub" width="20">
+            </a>
+        </div>
+        <p>Nossa Missão:</p>
+        <p>Ajudar animais abandonados e promover adoção responsável.</p>
+    </footer>
+</body>
+
+</html>

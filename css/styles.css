@@ -1,0 +1,124 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: #552814;
+}
+
+.logotipo {
+    margin: 10px;
+    height: 70px;
+    width: 70px;
+}
+
+
+.menu {
+    display: flex;
+    padding: 5px;
+    list-style-type: none;
+    align-items: center;
+    font-size: 16px;
+    margin: auto;
+    max-width: 1200px;
+
+
+}
+
+header {
+    background-color: #EFE3D9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+}
+
+
+.conteudo {
+    padding-top: 100px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+
+
+.menu a {
+    text-decoration: none;
+    color: #552814;
+    padding: 0 30px 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+}
+
+.bem-vindo {
+    background-color: #D4C7C3;
+}
+
+.subtitulo {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.mulher-com-cachorro{
+margin-left: 70px;
+}
+
+.imagem-mulher-cachorro{
+    border-radius: 1000px;
+}
+
+#adote {
+
+    display: flex;
+    margin: 5px;
+}
+
+
+
+
+/* seção adotar eclipse */
+
+.circulo {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background: #FDEDDC;
+    border-radius: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+h3 {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 9px;
+    text-align: center;
+}
+
+.imagem {
+    width: 80px;
+    height: 80px;
+    border: solid 1px;
+
+}
+
+.rodape {
+    margin: auto;
+    max-width: 1200px;
+}
