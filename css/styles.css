@@ -7,6 +7,19 @@
     color: #552814;
 }
 
+/* ------------------------------------------------------------------------------------------------------ */
+/* classes gerais */
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+
 .logotipo {
     margin: 10px;
     height: 70px;
@@ -15,15 +28,10 @@
 
 
 .menu {
-    display: flex;
     padding: 5px;
     list-style-type: none;
     align-items: center;
     font-size: 16px;
-    margin: auto;
-    max-width: 1200px;
-
-
 }
 
 header {
@@ -40,18 +48,11 @@ header {
 
 .conteudo {
     padding-top: 100px;
-    margin: auto;
-    max-width: 1200px;
 }
-
-
 
 .menu a {
     text-decoration: none;
-    color: #552814;
     padding: 0 30px 0 0;
-    display: flex;
-    justify-content: space-evenly;
     font-size: 16px;
 }
 
@@ -60,65 +61,89 @@ header {
 }
 
 .subtitulo {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
-.principal{
-    display: flex;
+.principal {
     justify-content: center;
     align-items: center;
     padding: 32px;
 }
 
-.mulher-com-cachorro{
-margin-left: 70px;
+.mulher-com-cachorro {
+    margin-left: 70px;
 }
 
-.imagem-mulher-cachorro{
+.imagem-mulher-cachorro {
     border-radius: 1000px;
 }
 
-#adote {
-
-    display: flex;
-    margin: 5px;
-}
-
-
-
-
 /* seção adotar eclipse */
 
+.adotar {
+    text-align: center;
+    padding: 32px;
+}
+
 .circulo {
-    margin: 10px;
-    width: 200px;
-    height: 200px;
-    background: #FDEDDC;
+    margin: 25px;
+    width: 250px;
+    height: 250px;
+    background-color: #F7E7DA;
     border-radius: 50%;
     padding: 30px;
-    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0 4px 12px #9E6B50;
 }
 
-h3 {
+.titulo-do-circulo {
     font-size: 12px;
-    font-weight: bold;
-    padding: 9px;
     text-align: center;
+    padding: 5px;
+    margin-bottom: 30px;
 }
 
-.imagem {
-    width: 80px;
-    height: 80px;
-    border: solid 1px;
-
+.imagem-card {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    padding: 3px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: #D4C7C3;
 }
 
-.rodape {
-    margin: auto;
-    max-width: 1200px;
+.texto-img {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
 }
+
+.texto-imagem {
+    margin-bottom: 15px;
+}
+
+.botao-adote-alinhar {
+    justify-content: center;
+}
+
+.botao {
+    width: 82px;
+    height: 31px;
+    padding: 8px;
+    align-items: center;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #F5EDE3;
+    background-color: #552814;
+    border: #552814;
+    cursor: pointer;
+}
+
+
+.rodape {}

@@ -18,7 +18,7 @@
     <header>
         <nav>
 
-            <ul class="menu">
+            <ul class="menu container flex">
                 <li>
                     <a href="/">
                         <img src="img/logopet.png" alt="logo-pet" width="100" class="logotipo"></a>
@@ -26,17 +26,17 @@
                 <li><a href="#sobre">Sobre Nós</a></li>
                 <li><a href="#perguntas">Perguntas Frequentes</a></li>
                 <li><a href="#adote">Adote</a></li>
-                <li><a href="#sinalizar">Sinalizar</a></li>
+                <li><a href="#sinalizar"><button class="botao">Sinalizar</button></a></li>
             </ul>
 
         </nav>
 
     </header>
 
-    <main class="conteudo">
+    <main class="conteudo container">
         <section class="bem-vindo">
 
-            <div class="principal">
+            <div class="principal flex">
                 <div>
                     <h1>Bem-Vindos a PetNest</h1>
                     <h2 class="subtitulo">Seu melhor amigo, nossa missão</h2>
@@ -44,47 +44,64 @@
                 </div>
 
                 <div class="mulher-com-cachorro">
-                    <img class="imagem-mulher-cachorro" width='300' src="img/mulher-com-cachorro.png" alt="mulher-com-cachorro-no-colo">
+                    <img class="imagem-mulher-cachorro" width='300' src="img/mulher-com-cachorro.png"
+                        alt="mulher-com-cachorro-no-colo">
                 </div>
             </div>
         </section>
-
-        <h2>Por que Adotar?</h2>
         <section id="adote">
+            <h2 class="adotar">Por que Adotar?</h2>
+        </section>
+        <section class="flex">
+
             <article>
-                <div class="circulo">
-                    <h3>Não existe recompensa maior</h3>
-                    <img class="imagem" src="img/moça-abracando o cachorro.jpg" alt="moça-abraçando-pet">
-                    <p class="eclipse">de vê-los alegre saudável com seu novo lar.</p>
+                <div class="circulo flex">
+
+                    <h3 class="titulo-do-circulo">Não existe recompensa maior</h3>
+                    <div class="flex texto-imagem">
+                        <img class="imagem-card" src="img/moça-abracando o cachorro.jpg" alt="moça-abraçando-pet">
+                        <p class="texto-img">de vê-los alegre saudável com seu novo lar.</p>
+                    </div>
                 </div>
             </article>
 
             <article>
-                <div class="circulo">
-                    <h3>Pensando bem, você pode?</h3>
-                    <img class="imagem" src="img/pessoas-com-pet.jpg" alt="pessoas-com-seus-pet">
-                    <p>Mudar o destino de um animal de rua.</p>
+                <div class="circulo flex">
+                    <h3 class="titulo-do-circulo">Pensando bem, você pode?</h3>
+                    <div class="flex texto-imagem">
+                        <img class="imagem-card" src="img/pessoas-com-pet.jpg" alt="pessoas-com-seus-pet">
+                        <p class="texto-img">Mudar o destino de um animal de rua.</p>
+                    </div>
                 </div>
             </article>
 
             <article>
-                <div class="circulo">
-                    <h3>Neste momento</h3>
-                    <img class="imagem" src="img/rapaz-passeando-com-cachorro.png" alt="rapaz-passeando-com-seu-pet">
-                    <p>Milhares de animal estão esperando um humano para chamar de seu.</p>
+                <div class="circulo flex">
+                    <h3 class="titulo-do-circulo">Neste momento</h3>
+                    <div class="flex texto-imagem">
+                        <img class="imagem-card" src="img/pessoas-passeando-com-cachorro.jpg"
+                            alt="pessoas-passeando-com-cachorro-na-rua">
+                        <p class="texto-img">Milhares de animais estão esperando um humano para chamar de seu.</p>
+                    </div>
                 </div>
             </article>
 
             <article>
-                <div class="circulo">
-                    <h3>Motivos para Adotar</h3>
-                    <img class="imagem" src="img/moça-brincando-pets.png" alt="moça-brincando-seus-pet-em-casa">
-                    <p>Adotar um pet é transformar uma vida você oferece amor, segurança.</p>
+                <div class="circulo flex">
+                    <h3 class="titulo-do-circulo">Motivos para Adotar</h3>
+                    <div class="flex texto-imagem">
+                        <img class="imagem-card" src="img/moca-brincando-pets.png"
+                            alt="moça-brincando-seus-pet-em-casa">
+                        <p class="texto-img">Adotar um pet é transformar uma vida você oferece amor, segurança.</p>
+                    </div>
                 </div>
             </article>
+
 
         </section>
-        <button>Adote</button>
+        <div class="flex botao-adote-alinhar">
+            <button class="botao">Adote</button>
+        </div>
 
         <section id="sobre">
             <h4>Sobre Nós</h4>
@@ -272,7 +289,7 @@
         </section>
     </main>
 
-    <footer class="rodape">
+    <footer class="rodape container">
         <p>Todos Direitos Reservados</p>
         <p>&copy; 2026 - PetNest</p>
         <p>Desenvolvido por Juliana Miranda | Estudante de Tecnologia</p>
