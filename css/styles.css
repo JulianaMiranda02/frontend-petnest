@@ -7,8 +7,8 @@
     color: #552814;
 }
 
-/* ------------------------------------------------------------------------------------------------------ */
-/* classes gerais */
+/* ------------------------------------classes-gerais---------------------------------------------------------------- */
+
 .container {
     margin: auto;
     max-width: 1200px;
@@ -17,6 +17,11 @@
 .flex {
     display: flex;
 }
+
+.cor-de-fundo-da-pagina {
+    background-color: #D4C7C3
+}
+
 
 /* ------------------------------------------------------------------------------------------------------ */
 
@@ -143,6 +148,68 @@ header {
     background-color: #552814;
     border: #552814;
     cursor: pointer;
+}
+
+/* ---------------------------------seção---sobre------------------------------------------------------------------- */
+
+#sobre {
+    margin-top: 32px;
+    margin-bottom: 30px;
+}
+
+.texto-da-secao-sobre {
+    text-align: justify;
+    padding: 15px;
+}
+
+.secao-video {
+    justify-content: center;
+    padding: 15px;
+
+}
+
+/* -------------------------seção sinalizar------------------------------------------------------------------- */
+
+.image-sinalizar {
+    align-items: flex-end;
+    padding: 7px;
+    margin-left: 31px;
+
+
+}
+
+/* classe  gerais para formulario */
+
+.formulario {
+    text-align: center;
+    border: #552814 1px solid;
+    padding: 28px;
+    margin-bottom: 30px;
+    margin: 34px;
+}
+
+.titulo-form {
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+.elementos-do-form {
+    padding: 12px;
+}
+
+.caixa {
+    padding: 6px;
+    width: 300px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+}
+
+.nome-da-caixa {
+    flex-direction: column;
+    padding: 10px;
+    margin-left: -220px;
 }
 
 

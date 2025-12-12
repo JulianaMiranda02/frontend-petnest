@@ -103,72 +103,82 @@
             <button class="botao">Adote</button>
         </div>
 
-        <section id="sobre">
-            <h4>Sobre Nós</h4>
+        <section id="sobre" class="cor-de-fundo-da-pagina">
+            <div class="texto-da-secao-sobre">
+                <h4>Sobre Nós</h4>
 
-            <p>A PetNest nasceu com o propósito de criar um espaço onde pets encontrem cuidado, carinho e informação de
-                qualidade.</p>
+                <br/>
 
-            <p>Acreditamos que cada animal merece uma vida saudável, segura e cheia de afeto e que a
-                adoção é uma das formas mais bonitas de transformar vidas.</p>
+                <p>A PetNest nasceu com o propósito de criar um espaço onde pets encontrem cuidado, carinho e informação
+                    de qualidade.</p><br>
 
-            <p>Com principal objetivo incentivar sinalização de animais abandonados, pois informar sobre um pet em
-                situação de risco é um ato de proteção e responsabilidade. Através dessa atitude, aumentamos as chances
-                de resgate, cuidados adequados e, quem sabe, um novo lar cheio de amor.</p>
+                <p>Acreditamos que cada animal merece uma vida saudável, segura e cheia de afeto e que a
+                    adoção é uma das formas mais bonitas de transformar vidas.</p><br>
 
-            <p>Oferecemos conteúdos educativos, na PetNest acreditamos que cada animal merece um lar e estamos aqui para
-                apoiar quem decide fazer a diferença.</p>
+                <p>Com principal objetivo incentivar sinalização de animais abandonados, pois informar sobre um pet em
+                    situação de risco é um ato de proteção e responsabilidade. Através dessa atitude, aumentamos as
+                    chances
+                    de resgate, cuidados adequados e, quem sabe, um novo lar cheio de amor.</p><br>
 
-            <p>Assiste vídeo abaixo e evite este tipo de situação:</p>
+                <p>Oferecemos conteúdos educativos, na PetNest acreditamos que cada animal merece um lar e estamos aqui
+                    para
+                    apoiar quem decide fazer a diferença.</p><br>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/rFiZEm0ww8k?si=l-scI7546DiM-h9R"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>Assiste vídeo abaixo e evite este tipo de situação:</p>
+            </div>
 
+            <div class="flex secao-video">
+                <iframe width="900" height="380" src="https://www.youtube.com/embed/rFiZEm0ww8k?si=l-scI7546DiM-h9R"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
 
         <!-- formulario com os campo para sinalizar -->
-        <section id="sinalizar">
-            <img src="img/icone-sinalizar.png" alt="bandeira-de-sinalizar" width="50">
-            <h4>Sinalizar</h4>
+        <section id="sinalizar" class="cor-de-fundo-da-pagina">
+            <div class="flex image-sinalizar">
+                <img src="img/icone-sinalizar.png" alt="bandeira-de-sinalizar" width="50" height="50">
+                <h4>Sinalizar</h4>
+            </div>
+
             <form name="cadastro" method="post" action="">
                 <!-- campos de botoes -->
-                <fieldset id="dados-basicos">
-                    <legend>Dados básicos</legend>
+                <fieldset id="dados-basicos" class="formulario">
+                    <legend class="titulo-form">Dados básicos</legend>
 
-                    <div id="nome">
-                        <label for="name">Nome</label>
+                    <div id="nome" class="elementos-do-form">
+                        <label for="name" class=" flex nome-da-caixa">Nome</label>
 
-                        <input type="text" placeholder="Digite seu nome e sobrenome" required id="name">
+                        <input type="text" placeholder="nome e sobrenome" required id="name" class="caixa">
                     </div>
 
-                    <div id="telefone">
-                        <label for="telefone">Telefone</label>
+                    <div id="telefone" class="elementos-do-form">
+                        <label for="telefone" class=" flex nome-da-caixa">Telefone</label>
                         <input type="tel" placeholder="99-99999-9999" required="required"
-                            pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}">
+                            pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" class="caixa">
                     </div>
 
-                    <div id="sexo">
-                        <label for="sexo">Sexo do animal:</label>
-                        <select id="sexo" name="sexo">
+                    <div id="sexo" class="elementos-do-form">
+                        <label for="sexo" class=" flex nome-da-caixa">Sexo</label>
+                        <select id="sexo" name="sexo" class="caixa">
                             <option disabled selected>Escolha uma opção</option>
                             <option value="macho">Macho</option>
                             <option value="femea">Fêmea</option>
                         </select>
                     </div>
 
-                    <div id="tipo">
-                        <label for="tipo">Tipo</label>
-                        <select id="tipo" name="tipo">
+                    <div id="tipo" class="elementos-do-form">
+                        <label for="tipo" class=" flex nome-da-caixa">Tipo</label>
+                        <select id="tipo" name="tipo" class="caixa">
                             <option disabled selected>Escolha uma opção</option>
                             <option value="gato">Gato</option>
                             <option value="cachorro">Cachorro</option>
                         </select>
                     </div>
 
-                    <div id="porte">
-                        <label>Porte:</label>
+                    <div id="porte" class="elementos-do-form">
+                        <label class=" flex nome-da-caixa">Porte:</label>
 
                         <input type="radio" id="pequeno" name="porte" value="pequeno">
                         <label for="pequeno">Pequeno</label>
@@ -191,8 +201,8 @@
                     </div>
                 </fieldset>
 
-                <fieldset id="localizacao">
-                    <legend>Localização</legend>
+                <fieldset id="localizacao" class="formulario">
+                    <legend class="titulo-form">Localização</legend>
 
                     <div id="rua">
                         <label for="rua">Rua</label>
