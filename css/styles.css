@@ -157,6 +157,10 @@ header {
     margin-bottom: 30px;
 }
 
+#sinalizar {
+    padding: 15px;
+}
+
 .texto-da-secao-sobre {
     text-align: justify;
     padding: 15px;
@@ -181,11 +185,9 @@ header {
 /* classe  gerais para formulario */
 
 .formulario {
-    text-align: center;
     border: #552814 1px solid;
     padding: 28px;
-    margin-bottom: 30px;
-    margin: 34px;
+    border-radius: 8px; 
 }
 
 .titulo-form {
@@ -195,22 +197,54 @@ header {
 
 /* ----------------------------------------------------------------------------------------- */
 .elementos-do-form {
-    padding: 12px;
+    padding: 11px;
 }
 
-.caixa {
+.caixa-input {
     padding: 6px;
-    width: 300px;
+    width: 100%;
     height: 35px;
     border-radius: 8px;
     border: none;
 }
 
 .nome-da-caixa {
-    flex-direction: column;
-    padding: 10px;
-    margin-left: -220px;
+    display: block;
+    margin-bottom: 10px;
 }
+
+.descricao-da-caixa {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    resize: none;
+}
+
+#meufile {
+    padding: 5px;
+}
+
+.radio-option {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.botao-formulario { 
+    justify-content: center;
+    padding: 29px;
+}
+
+.bnt-form {
+    margin: 10px;
+}
+
+.opcoes-porte{
+    align-items: center;
+    gap: 10px;
+    
+}
+
 
 
 .rodape {}

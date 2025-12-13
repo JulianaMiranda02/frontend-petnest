@@ -49,9 +49,11 @@
                 </div>
             </div>
         </section>
+
         <section id="adote">
             <h2 class="adotar">Por que Adotar?</h2>
         </section>
+
         <section class="flex">
 
             <article>
@@ -99,6 +101,7 @@
 
 
         </section>
+
         <div class="flex botao-adote-alinhar">
             <button class="botao">Adote</button>
         </div>
@@ -107,7 +110,7 @@
             <div class="texto-da-secao-sobre">
                 <h4>Sobre Nós</h4>
 
-                <br/>
+                <br />
 
                 <p>A PetNest nasceu com o propósito de criar um espaço onde pets encontrem cuidado, carinho e informação
                     de qualidade.</p><br>
@@ -144,92 +147,95 @@
 
             <form name="cadastro" method="post" action="">
                 <!-- campos de botoes -->
+
                 <fieldset id="dados-basicos" class="formulario">
                     <legend class="titulo-form">Dados básicos</legend>
 
                     <div id="nome" class="elementos-do-form">
-                        <label for="name" class=" flex nome-da-caixa">Nome</label>
+                        <label for="name" class="nome-da-caixa">Nome</label>
 
-                        <input type="text" placeholder="nome e sobrenome" required id="name" class="caixa">
+                        <input type="text" placeholder="Nome e Sobrenome" required id="name" class="caixa-input">
                     </div>
 
                     <div id="telefone" class="elementos-do-form">
-                        <label for="telefone" class=" flex nome-da-caixa">Telefone</label>
-                        <input type="tel" placeholder="99-99999-9999" required="required"
-                            pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" class="caixa">
+                        <label for="telefone" class="nome-da-caixa">Telefone</label>
+                        <input type="tel" placeholder="99-99999-9999" required pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
+                            class="caixa-input">
                     </div>
 
                     <div id="sexo" class="elementos-do-form">
-                        <label for="sexo" class=" flex nome-da-caixa">Sexo</label>
-                        <select id="sexo" name="sexo" class="caixa">
-                            <option disabled selected>Escolha uma opção</option>
+                        <label for="sexo" class="nome-da-caixa">Sexo</label>
+                        <select required id="sexo" name="sexo" class="caixa-input">
+                            <option value="" disabled selected>Escolha uma opção</option>
                             <option value="macho">Macho</option>
                             <option value="femea">Fêmea</option>
                         </select>
                     </div>
 
                     <div id="tipo" class="elementos-do-form">
-                        <label for="tipo" class=" flex nome-da-caixa">Tipo</label>
-                        <select id="tipo" name="tipo" class="caixa">
-                            <option disabled selected>Escolha uma opção</option>
+                        <label for="tipo" class="nome-da-caixa">Tipo</label>
+                        <select required id="tipo" name="tipo" class="caixa-input">
+                            <option value="" disabled selected>Escolha uma opção</option>
                             <option value="gato">Gato</option>
                             <option value="cachorro">Cachorro</option>
                         </select>
                     </div>
 
                     <div id="porte" class="elementos-do-form">
-                        <label class=" flex nome-da-caixa">Porte:</label>
+                        <label class="nome-da-caixa">Porte</label>
+                        <div class="flex opcoes-porte">
+                            <input required type="radio" id="pequeno" name="porte" value="pequeno" class="radio-option">
+                            <label for="pequeno">Pequeno</label>
 
-                        <input type="radio" id="pequeno" name="porte" value="pequeno">
-                        <label for="pequeno">Pequeno</label>
+                            <input required type="radio" id="medio" name="porte" value="medio" class="radio-option">
+                            <label for="medio">Médio</label>
 
-                        <input type="radio" id="medio" name="porte" value="medio">
-                        <label for="medio">Médio</label>
-
-                        <input type="radio" id="grande" name="porte" value="grande">
-                        <label for="grande">Grande</label><br><br>
+                            <input required type="radio" id="grande" name="porte" value="grande" class="radio-option">
+                            <label for="grande">Grande</label>
+                        </div>
                     </div>
 
-                    <div id="descricao">
-                        <label for="descricao">Descrição</label>
-                        <textarea id="descricao" name="descricao" rows="10" cols="40"></textarea>
+                    <div id="descricao" class="elementos-do-form">
+                        <label for="descricao" class="nome-da-caixa">Descrição</label>
+                        <textarea required class="descricao-da-caixa" id="descricao" name="descricao" rows="10"
+                            cols="40"></textarea>
                     </div>
 
-                    <div id="meufile">
-                        <label for="meufile">Selecione uma foto do animal:</label>
-                        <input type="file" id="meufile" name="meufile">
+                    <div id="meufile" class="elementos-do-form">
+                        <label for="meufile" class="flex">Selecione uma foto do animal:</label>
+                        <input required type="file" id="meufile" name="meufile">
                     </div>
                 </fieldset>
 
                 <fieldset id="localizacao" class="formulario">
                     <legend class="titulo-form">Localização</legend>
 
-                    <div id="rua">
-                        <label for="rua">Rua</label>
-                        <input type="text" placeholder="Nome da rua" required id="rua">
+                    <div id="rua" class="elementos-do-form">
+                        <label for="rua" class="nome-da-caixa">Rua</label>
+                        <input type="text" placeholder="Nome da rua" required id="rua" class="caixa-input">
                     </div>
 
-                    <div id="numero">
-                        <label for="numero">Número</label>
-                        <input type="text" placeholder="Numero do local" required id="numero">
+                    <div id="numero" class="elementos-do-form">
+                        <label for="numero" class="nome-da-caixa">Número</label>
+                        <input type="text" placeholder="Numero do local" required id="numero" class="caixa-input">
                     </div>
 
-                    <div id="bairro">
-                        <label for="bairro">Bairro</label>
-                        <input type="text" placeholder="Nome do bairro" required id="bairro">
+                    <div id="bairro" class="elementos-do-form">
+                        <label for="bairro" class="nome-da-caixa">Bairro</label>
+                        <input type="text" placeholder="Nome do bairro" required id="bairro" class="caixa-input">
                     </div>
 
-                    <div id="cidade">
-                        <label for="cidade">Cidade</label>
-                        <input type="text" placeholder="Cidade" required id="cidade">
+                    <div id="cidade" class="elementos-do-form">
+                        <label for="cidade" class="nome-da-caixa">Cidade</label>
+                        <input type="text" placeholder="Cidade" required id="cidade" class="caixa-input">
                     </div>
 
-                    <div id="estado">
+                    <div id="estado" class="elementos-do-form">
 
-                        <label for="estado">Estado</label>
+                        <label for="estado" class="nome-da-caixa">Estado</label>
 
-                        <select id="estado" name="estado">
-                            <option disabled selected>Selecione</option>
+                        <select required id="estado" name="estado" class="caixa-input">
+                            <option value="" disabled selected>Selecione</option>
                             <option value="AC">AC</option>
                             <option value="AL">AL</option>
                             <option value="AP">AP</option>
@@ -260,13 +266,16 @@
                         </select>
                     </div>
 
-                    <div id="cep">
-                        <label for="cep">CEP</label>
-                        <input type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000">
+                    <div id="cep" class="elementos-do-form">
+                        <label for="cep" class="nome-da-caixa">CEP</label>
+                        <input required type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000"
+                            class="caixa-input">
                     </div>
                 </fieldset>
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpar</button>
+                <div class="flex botao-formulario">
+                    <button type="submit" class="botao bnt-form">Enviar</button>
+                    <button type="reset" class="botao bnt-form">Limpar</button>
+                </div>
             </form>
         </section>
 
