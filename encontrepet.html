@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encontre seu Pet</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu container flex">
+                <li>
+                    <a href="/">
+                        <img src="img/logopet.png" alt="logo-pet" width="100" class="logotipo">
+                    </a>
+                </li>
+                <li><a href="index.html#sobre" class="ativo">Sobre Nós</a></li>
+                <li><a href="index.html#perguntas" class="ativo">Perguntas Frequentes</a></li>
+                <li><a href="index.html#adote" class="ativo">Adote</a></li>
+                <li><a href="index.html#sinalizar" class="botao">Sinalizar</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+
+            <h1 class="titulo-encontre">Encontre seu Pet:</h1>
+
+            <form>
+                <div class="flex centralizar-conteudo">
+                    <div class="flex campo-pesquisar">
+                        <label for="cidade">Cidade:</label>
+                        <input class="borda-caixa" type="text" required id="cidade">
+
+                        <label for="estado">Estado:</label>
+
+                        <select required id="estado" name="estado" class="borda-caixa">
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                        </select>
+
+                        <button class="botao">Pesquisar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <div class="flex centralizar-conteudo">
+                <div class="card">
+                    <div class=" flex conteudo-card">
+                        <img class="conteudo-img-card" src="/img/cachorro.png" alt="cachorro-pequeno">
+                        <div class="info">
+                            <h4>Cachorro</h4>
+                            <p>Porte: Pequeno</p>
+                            <p>Bairro: São Felipe</p>
+                            <p>Sexo: Fêmea</p>
+                        </div>
+                    </div>
+                    <p class="descricao">Descrição: Cachorro caramelo, porte médio, cerca de 2–3 anos, encontrada
+                        próxima à Praça Central,
+                        magra
+                        porém sem ferimentos, mansa e sem identificação.</p>
+                    <div class="bnt-adotado">
+                        <button class=" botao botao-adotado">Adotado</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="rodape container">
+        <div class="texto-footer">
+            <p>Todos Direitos Reservados</p><br>
+            <p>&copy; 2026 - PetNest</p><br>
+            <p>Desenvolvido por Juliana Miranda | Estudante de Tecnologia</p>
+        </div>
+        <div class="flex container-link">
+            <div class="centralizar-link">
+                <h5>Links</h5>
+                <div class="link-footer">
+                    <div class="flex">
+                        <div><a href="#adote" class="link-footer">Adote</a></div>
+                        <div><a href="#sobre" class="link-footer">Sobre Nós</a></div>
+                    </div>
+                    <div class="flex">
+                        <div><a href="#perguntas" class="link-footer">FAQ</a></div>
+                        <div><a href="#sinalizar" class="link-footer">Sinalizar</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="redes">
+                <div class="imagem-github">
+                    <h5>Redes</h5><br>
+                    <a href="https://github.com/JulianaMiranda02" target="_blank" rel="noopener noreferrer">
+                        <img src="img/github.png" alt="GitHub" width="20"></a>
+                </div>
+            </div>
+        </div>
+        <div class="centralizar-missao">
+            <p>Nossa Missão:</p><br>
+            <p>Ajudar animais abandonados e promover adoção responsável.</p><br>
+        </div>
+    </footer>
+
+</body>
+
+</html>

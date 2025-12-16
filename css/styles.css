@@ -22,6 +22,11 @@
     background-color: #D4C7C3
 }
 
+.ativo:hover {
+    color: #B54124;
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 /* ------------------------------------------------------------------------------------------------------ */
 
@@ -37,6 +42,7 @@
     list-style-type: none;
     align-items: center;
     font-size: 16px;
+    gap: 30px;
 }
 
 header {
@@ -57,7 +63,6 @@ header {
 
 .menu a {
     text-decoration: none;
-    padding: 0 30px 0 0;
     font-size: 16px;
 }
 
@@ -137,17 +142,23 @@ header {
 }
 
 .botao {
-    width: 82px;
+    display: flex;
+    padding: 0 20px 0 20px;
     height: 31px;
-    padding: 8px;
-    align-items: center;
-    margin: 5px;
     border-radius: 8px;
     font-size: 12px;
+    font-weight: bold;
     color: #F5EDE3;
     background-color: #552814;
-    border: #552814;
     cursor: pointer;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: #A07E62;
 }
 
 /* ---------------------------------seção---sobre------------------------------------------------------------------- */
@@ -187,7 +198,7 @@ header {
 .formulario {
     border: #552814 1px solid;
     padding: 28px;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
 
 .titulo-form {
@@ -220,31 +231,157 @@ header {
     resize: none;
 }
 
-#meufile {
-    padding: 5px;
-}
-
 .radio-option {
     width: 16px;
     height: 16px;
     cursor: pointer;
 }
 
-.botao-formulario { 
+.botao-formulario {
     justify-content: center;
     padding: 29px;
 }
 
 .bnt-form {
     margin: 10px;
+
+
 }
 
-.opcoes-porte{
+.opcoes-porte {
     align-items: center;
     gap: 10px;
-    
+
 }
 
+/* -----------------------------------secao-perguntas------------------------------------------------------------ */
+#perguntas {
+    background-color: #D4C7C3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 0 0 30px 0;
+}
 
+.pergunta {
+    width: 80%;
+}
 
-.rodape {}
+.borda-do-quadrado {
+    border: solid 2px;
+    border-radius: 7px;
+    padding: 28px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.borda-do-quadrado h5 {
+    margin-bottom: 10px;
+}
+
+.titulo-de-perguntas {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+/* ----------------------------------------secao-do-footer----------------------------------------------- */
+.rodape {
+    margin-top: 30px;
+    background-color: #EFE3D9;
+}
+
+.texto-footer {
+    text-align: center;
+    padding: 15px;
+}
+
+.link-footer {
+    padding: 10px;
+}
+
+.imagem-github {
+    text-align: center;
+
+}
+
+.centralizar-link {
+    text-align: center;
+}
+
+.container-link {
+    justify-content: space-evenly;
+}
+
+.centralizar-missao {
+    text-align: center;
+
+}
+
+/* -----------------------------pagina--encontre-pet-------------------------------------------------- */
+.titulo-encontre {
+    margin-top: 120px;
+    padding: 25px;
+    text-align: center;
+}
+
+.campo-pesquisar {
+    padding: 28px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.borda-caixa {
+    border: #552814 1px solid;
+    width: 123px;
+    height: 41px;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.conteudo-card {
+    gap: 15px;
+    /* espaço entre eles */
+    align-items: flex-start;
+
+}
+
+.card {
+    width: 380px;
+    border: 2px solid #552814;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.conteudo-img-card {
+    width: 130px;
+    height: 130px;
+}
+
+.info p {
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+.descricao {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.botao-adotado {
+    background-color: #B54124;
+    text-align: center;
+}
+
+.centralizar-conteudo {
+    justify-content: center;
+
+}
+
+.bnt-adotado {
+    text-align: center;
+}

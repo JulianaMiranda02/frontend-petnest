@@ -17,18 +17,17 @@
 <body>
     <header>
         <nav>
-
             <ul class="menu container flex">
                 <li>
                     <a href="/">
-                        <img src="img/logopet.png" alt="logo-pet" width="100" class="logotipo"></a>
+                        <img src="img/logopet.png" alt="logo-pet" width="100" class="logotipo">
+                    </a>
                 </li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#perguntas">Perguntas Frequentes</a></li>
-                <li><a href="#adote">Adote</a></li>
-                <li><a href="#sinalizar"><button class="botao">Sinalizar</button></a></li>
+                <li><a href="index.html#sobre" class="ativo">Sobre Nós</a></li>
+                <li><a href="index.html#perguntas" class="ativo">Perguntas Frequentes</a></li>
+                <li><a href="index.html#adote" class="ativo">Adote</a></li>
+                <li><a href="index.html#sinalizar" class="botao">Sinalizar</a></li>
             </ul>
-
         </nav>
 
     </header>
@@ -55,13 +54,12 @@
         </section>
 
         <section class="flex">
-
             <article>
                 <div class="circulo flex">
 
                     <h3 class="titulo-do-circulo">Não existe recompensa maior</h3>
                     <div class="flex texto-imagem">
-                        <img class="imagem-card" src="img/moça-abracando o cachorro.jpg" alt="moça-abraçando-pet">
+                        <img class="imagem-card" src="img/moça-abracando-o-cachorro.jpg" alt="moça-abraçando-pet">
                         <p class="texto-img">de vê-los alegre saudável com seu novo lar.</p>
                     </div>
                 </div>
@@ -103,14 +101,14 @@
         </section>
 
         <div class="flex botao-adote-alinhar">
-            <button class="botao">Adote</button>
+            <a href="encontrepet.html" class="botao">Adote</a>
         </div>
 
         <section id="sobre" class="cor-de-fundo-da-pagina">
             <div class="texto-da-secao-sobre">
                 <h4>Sobre Nós</h4>
 
-                <br />
+                <br>
 
                 <p>A PetNest nasceu com o propósito de criar um espaço onde pets encontrem cuidado, carinho e informação
                     de qualidade.</p><br>
@@ -131,8 +129,8 @@
             </div>
 
             <div class="flex secao-video">
-                <iframe width="900" height="380" src="https://www.youtube.com/embed/rFiZEm0ww8k?si=l-scI7546DiM-h9R"
-                    title="YouTube video player" frameborder="0"
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rFiZEm0ww8k?si=l-scI7546DiM-h9R"
+                    title="YouTube video player" style="border:0;"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
@@ -145,7 +143,7 @@
                 <h4>Sinalizar</h4>
             </div>
 
-            <form name="cadastro" method="post" action="">
+            <form name="cadastro" method="post" action="teste.php">
                 <!-- campos de botoes -->
 
                 <fieldset id="dados-basicos" class="formulario">
@@ -154,16 +152,17 @@
                     <div id="nome" class="elementos-do-form">
                         <label for="name" class="nome-da-caixa">Nome</label>
 
-                        <input type="text" placeholder="Nome e Sobrenome" required id="name" class="caixa-input">
-                    </div>
-
-                    <div id="telefone" class="elementos-do-form">
-                        <label for="telefone" class="nome-da-caixa">Telefone</label>
-                        <input type="tel" placeholder="99-99999-9999" required pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
+                        <input type="text" name="nome" placeholder="Nome e Sobrenome" required id="name"
                             class="caixa-input">
                     </div>
 
-                    <div id="sexo" class="elementos-do-form">
+                    <div class="elementos-do-form">
+                        <label for="telefone" class="nome-da-caixa">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="99-99999-9999" required
+                            pattern="\d{2}-\d{5}-\d{4}" class="caixa-input">
+                    </div>
+
+                    <div class="elementos-do-form">
                         <label for="sexo" class="nome-da-caixa">Sexo</label>
                         <select required id="sexo" name="sexo" class="caixa-input">
                             <option value="" disabled selected>Escolha uma opção</option>
@@ -172,7 +171,7 @@
                         </select>
                     </div>
 
-                    <div id="tipo" class="elementos-do-form">
+                    <div class="elementos-do-form">
                         <label for="tipo" class="nome-da-caixa">Tipo</label>
                         <select required id="tipo" name="tipo" class="caixa-input">
                             <option value="" disabled selected>Escolha uma opção</option>
@@ -181,7 +180,7 @@
                         </select>
                     </div>
 
-                    <div id="porte" class="elementos-do-form">
+                    <div class="elementos-do-form">
                         <label class="nome-da-caixa">Porte</label>
                         <div class="flex opcoes-porte">
                             <input required type="radio" id="pequeno" name="porte" value="pequeno" class="radio-option">
@@ -195,13 +194,13 @@
                         </div>
                     </div>
 
-                    <div id="descricao" class="elementos-do-form">
+                    <div class="elementos-do-form">
                         <label for="descricao" class="nome-da-caixa">Descrição</label>
                         <textarea required class="descricao-da-caixa" id="descricao" name="descricao" rows="10"
                             cols="40"></textarea>
                     </div>
 
-                    <div id="meufile" class="elementos-do-form">
+                    <div class="elementos-do-form">
                         <label for="meufile" class="flex">Selecione uma foto do animal:</label>
                         <input required type="file" id="meufile" name="meufile">
                     </div>
@@ -210,27 +209,29 @@
                 <fieldset id="localizacao" class="formulario">
                     <legend class="titulo-form">Localização</legend>
 
-                    <div id="rua" class="elementos-do-form">
+                    <div class="elementos-do-form">
                         <label for="rua" class="nome-da-caixa">Rua</label>
-                        <input type="text" placeholder="Nome da rua" required id="rua" class="caixa-input">
+                        <input type="text" placeholder="Nome da rua" required id="rua" name="rua" class="caixa-input">
                     </div>
 
-                    <div id="numero" class="elementos-do-form">
+                    <div class="elementos-do-form">
                         <label for="numero" class="nome-da-caixa">Número</label>
-                        <input type="text" placeholder="Numero do local" required id="numero" class="caixa-input">
+                        <input type="text" placeholder="Numero do local" required id="numero" name="numero"
+                            class="caixa-input">
                     </div>
 
-                    <div id="bairro" class="elementos-do-form">
+                    <div class="elementos-do-form">
                         <label for="bairro" class="nome-da-caixa">Bairro</label>
-                        <input type="text" placeholder="Nome do bairro" required id="bairro" class="caixa-input">
+                        <input type="text" placeholder="Nome do bairro" required id="bairro" name="bairro"
+                            class="caixa-input">
                     </div>
 
-                    <div id="cidade" class="elementos-do-form">
+                    <div class="elementos-do-form">
                         <label for="cidade" class="nome-da-caixa">Cidade</label>
-                        <input type="text" placeholder="Cidade" required id="cidade" class="caixa-input">
+                        <input type="text" placeholder="Cidade" required id="cidade" name="cidade" class="caixa-input">
                     </div>
 
-                    <div id="estado" class="elementos-do-form">
+                    <div class="elementos-do-form">
 
                         <label for="estado" class="nome-da-caixa">Estado</label>
 
@@ -266,10 +267,10 @@
                         </select>
                     </div>
 
-                    <div id="cep" class="elementos-do-form">
+                    <div class="elementos-do-form">
                         <label for="cep" class="nome-da-caixa">CEP</label>
-                        <input required type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000"
-                            class="caixa-input">
+                        <input type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000" class="caixa-input"
+                            pattern="\d{5}-\d{3}" required>
                     </div>
                 </fieldset>
                 <div class="flex botao-formulario">
@@ -280,54 +281,80 @@
         </section>
 
         <section id="perguntas">
-            <h4>Perguntas Frequentes (FAQ)</h4>
+            <h4 class="titulo-de-perguntas">Perguntas Frequentes (FAQ)</h4>
 
-            <article>
-                <h5>Onde denunciar maus tratos?</h5>
-                <p>A denúncia pode ser feita pela Polícia Militar no 190, pela Delegacia de Polícia Civil ou pelo
-                    aplicativo Proteção Animal (caso seu estado ofereça).</p>
+            <article class="pergunta">
+                <div class="flex borda-do-quadrado">
+                    <h5>Onde denunciar maus tratos?</h5>
+                    <p>A denúncia pode ser feita pela Polícia Militar no 190, pela Delegacia de Polícia Civil ou
+                        pelo
+                        aplicativo Proteção Animal (caso seu estado ofereça).</p>
+                </div>
             </article>
 
-            <article>
-                <h5>Vocês fazem resgates?</h5>
-                <p>No momento não realizamos resgates, mas podemos orientar e indicar protetores independentes ou ONGs
-                    da sua região.</p>
+            <article class="pergunta">
+                <div class="flex borda-do-quadrado">
+                    <h5>Vocês fazem resgates?</h5>
+                    <p>No momento não realizamos resgates, mas podemos orientar e indicar protetores independentes
+                        ou
+                        ONGs
+                        da sua região.</p>
+                </div>
             </article>
 
-            <article>
-                <h5>Como posso adotar um animal?</h5>
-                <p>Você pode preencher nosso formulário de adoção e nossa equipe entrará em contato para orientar toda a
-                    etapa de avaliação e escolha do pet ideal.</p>
+            <article class="pergunta">
+                <div class="flex borda-do-quadrado">
+                    <h5>Como posso adotar um animal?</h5>
+                    <p>Você pode preencher nosso formulário de adoção e nossa equipe entrará em contato para
+                        orientar
+                        toda a
+                        etapa de avaliação e escolha do pet ideal.</p>
+                </div>
             </article>
 
-            <article>
-                <h5>Vocês têm abrigo físico?</h5>
-                <p>Não, trabalhamos com lares temporários e rede de protetores parceiros.</p>
+            <article class="pergunta">
+                <div class="flex borda-do-quadrado">
+                    <h5>Vocês têm abrigo físico?</h5>
+                    <p>Não, trabalhamos com lares temporários e rede de protetores parceiros.</p>
+                </div>
             </article>
-
         </section>
+
     </main>
 
     <footer class="rodape container">
-        <p>Todos Direitos Reservados</p>
-        <p>&copy; 2026 - PetNest</p>
-        <p>Desenvolvido por Juliana Miranda | Estudante de Tecnologia</p>
-        <h6>Links</h6>
-        <ul>
-            <li><a href="#adote">Adote</a></li>
-            <li><a href="#sobre">Sobre Nós</a></li>
-            <li><a href="#perguntas">FAQ</a></li>
-            <li><a href="#sinalizar">Sinalizar</a></li>
-        </ul>
-
-        <div class="redes">
-            <h6>Redes</h6>
-            <a href="https://github.com/JulianaMiranda02" target="_blank">
-                <img src="img/github.png" alt="GitHub" width="20">
-            </a>
+        <div class="texto-footer">
+            <p>Todos Direitos Reservados</p><br>
+            <p>&copy; 2026 - PetNest</p><br>
+            <p>Desenvolvido por Juliana Miranda | Estudante de Tecnologia</p>
         </div>
-        <p>Nossa Missão:</p>
-        <p>Ajudar animais abandonados e promover adoção responsável.</p>
+        <div class="flex container-link">
+            <div class="centralizar-link">
+                <h5>Links</h5>
+                <div class="link-footer">
+                    <div class="flex">
+                        <div><a href="#adote" class="link-footer">Adote</a></div>
+                        <div><a href="#sobre" class="link-footer">Sobre Nós</a></div>
+                    </div>
+                    <div class="flex">
+                        <div><a href="#perguntas" class="link-footer">FAQ</a></div>
+                        <div><a href="#sinalizar" class="link-footer">Sinalizar</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="redes">
+                <div class="imagem-github">
+                    <h5>Redes</h5><br>
+                    <a href="https://github.com/JulianaMiranda02" target="_blank" rel="noopener noreferrer">
+                        <img src="img/github.png" alt="GitHub" width="20"></a>
+                </div>
+            </div>
+        </div>
+        <div class="centralizar-missao">
+            <p>Nossa Missão:</p><br>
+            <p>Ajudar animais abandonados e promover adoção responsável.</p><br>
+        </div>
     </footer>
 </body>
 
