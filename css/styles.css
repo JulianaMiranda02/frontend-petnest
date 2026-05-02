@@ -3,12 +3,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    color: #552814;
+    
 }
 
 /* ------------------------------------classes-gerais---------------------------------------------------------------- */
 
+html {
+  scroll-behavior: smooth; /*Isso faz a rolagem suave quando clicar no menu */
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #552814;
+}
 .container {
     margin: auto;
     max-width: 1200px;
@@ -22,11 +29,11 @@
     background-color: #D4C7C3
 }
 
-.ativo:hover {
+.menu a:hover {
     color: #B54124;
     font-weight: bold;
-    text-decoration: underline;
 }
+
 
 /* ------------------------------------------------------------------------------------------------------ */
 
@@ -47,19 +54,15 @@
 
 header {
     background-color: #EFE3D9;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
-    position: fixed;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     z-index: 1;
     width: 100%;
     top: 0px;
     left: 0px;
-    height: 100px;
+    position: sticky;
+    top: 0;
 }
 
-
-.conteudo {
-    padding-top: 100px;
-}
 
 .menu a {
     text-decoration: none;
@@ -102,7 +105,6 @@ header {
     height: 250px;
     background-color: #F7E7DA;
     border-radius: 50%;
-    padding: 30px;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
@@ -161,6 +163,7 @@ header {
     background-color: #A07E62;
 }
 
+
 /* ---------------------------------seção---sobre------------------------------------------------------------------- */
 
 #sobre {
@@ -216,7 +219,7 @@ header {
     width: 100%;
     height: 35px;
     border-radius: 8px;
-    border: none;
+    border: 1px solid #ccc;
 }
 
 .nome-da-caixa {
@@ -320,68 +323,3 @@ header {
 
 }
 
-/* -----------------------------pagina--encontre-pet-------------------------------------------------- */
-.titulo-encontre {
-    margin-top: 120px;
-    padding: 25px;
-    text-align: center;
-}
-
-.campo-pesquisar {
-    padding: 28px;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 15px;
-
-}
-
-.borda-caixa {
-    border: #552814 1px solid;
-    width: 123px;
-    height: 41px;
-    border-radius: 8px;
-    padding: 12px;
-}
-
-.conteudo-card {
-    gap: 15px;
-    /* espaço entre eles */
-    align-items: flex-start;
-
-}
-
-.card {
-    width: 380px;
-    border: 2px solid #552814;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.conteudo-img-card {
-    width: 130px;
-    height: 130px;
-}
-
-.info p {
-    margin: 3px 0;
-    font-size: 14px;
-}
-
-.descricao {
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.botao-adotado {
-    background-color: #B54124;
-    text-align: center;
-}
-
-.centralizar-conteudo {
-    justify-content: center;
-
-}
-
-.bnt-adotado {
-    text-align: center;
-}

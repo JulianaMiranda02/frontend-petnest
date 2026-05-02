@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plataforma para adoção de animais e sinalização de pets abandonados.">
+    <meta name="keywords" content="adoção de pets, animais abandonados, cachorro, gato, adoção responsável">
+    
     <title>PetNest</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/encontrepet.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,19 +19,20 @@
         rel="stylesheet">
 </head>
 
-<body>
+
+<body id="topo">
     <header>
         <nav>
             <ul class="menu container flex">
                 <li>
-                    <a href="/">
-                        <img src="img/logopet.png" alt="logo-pet" width="100" class="logotipo">
+                    <a href="#topo">
+                        <img src="img/logopet.png" alt="Logo PetNest" width="100" class="logotipo">
                     </a>
                 </li>
-                <li><a href="index.html#sobre" class="ativo">Sobre Nós</a></li>
-                <li><a href="index.html#perguntas" class="ativo">Perguntas Frequentes</a></li>
-                <li><a href="index.html#adote" class="ativo">Adote</a></li>
-                <li><a href="index.html#sinalizar" class="botao">Sinalizar</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#perguntas">Perguntas Frequentes</a></li>
+                <li><a href="#adote">Adote</a></li>
+                <li><a href="#sinalizar" class="botao">Sinalizar</a></li>
             </ul>
         </nav>
 
@@ -44,7 +50,7 @@
 
                 <div class="mulher-com-cachorro">
                     <img class="imagem-mulher-cachorro" width='300' src="img/mulher-com-cachorro.png"
-                        alt="mulher-com-cachorro-no-colo">
+                        alt="Mulher com o cachorro no colo">
                 </div>
             </div>
         </section>
@@ -59,8 +65,8 @@
 
                     <h3 class="titulo-do-circulo">Não existe recompensa maior</h3>
                     <div class="flex texto-imagem">
-                        <img class="imagem-card" src="img/moça-abracando-o-cachorro.jpg" alt="moça-abraçando-pet">
-                        <p class="texto-img">de vê-los alegre saudável com seu novo lar.</p>
+                        <img class="imagem-card" src="img/moça-abracando-o-cachorro.jpg" alt="Moça abraçando um pet">
+                        <p class="texto-img">de vê-los alegres e saudáveis em seu novo lar.</p>
                     </div>
                 </div>
             </article>
@@ -69,7 +75,7 @@
                 <div class="circulo flex">
                     <h3 class="titulo-do-circulo">Pensando bem, você pode?</h3>
                     <div class="flex texto-imagem">
-                        <img class="imagem-card" src="img/pessoas-com-pet.jpg" alt="pessoas-com-seus-pet">
+                        <img class="imagem-card" src="img/pessoas-com-pet.jpg" alt="Pessoas com o pet">
                         <p class="texto-img">Mudar o destino de um animal de rua.</p>
                     </div>
                 </div>
@@ -80,7 +86,7 @@
                     <h3 class="titulo-do-circulo">Neste momento</h3>
                     <div class="flex texto-imagem">
                         <img class="imagem-card" src="img/pessoas-passeando-com-cachorro.jpg"
-                            alt="pessoas-passeando-com-cachorro-na-rua">
+                            alt="Pessoas passeando com o cachorro na rua">
                         <p class="texto-img">Milhares de animais estão esperando um humano para chamar de seu.</p>
                     </div>
                 </div>
@@ -91,8 +97,8 @@
                     <h3 class="titulo-do-circulo">Motivos para Adotar</h3>
                     <div class="flex texto-imagem">
                         <img class="imagem-card" src="img/moca-brincando-pets.png"
-                            alt="moça-brincando-seus-pet-em-casa">
-                        <p class="texto-img">Adotar um pet é transformar uma vida você oferece amor, segurança.</p>
+                            alt="Moça brincando com seus pets em casa">
+                        <p class="texto-img">Adotar um pet é transformar uma vida: você oferece amor e segurança.</p>
                     </div>
                 </div>
             </article>
@@ -116,7 +122,8 @@
                 <p>Acreditamos que cada animal merece uma vida saudável, segura e cheia de afeto e que a
                     adoção é uma das formas mais bonitas de transformar vidas.</p><br>
 
-                <p>Com principal objetivo incentivar sinalização de animais abandonados, pois informar sobre um pet em
+                <p>Com o principal objetivo de incentivar a sinalização de animais abandonados, pois informar sobre um
+                    pet em
                     situação de risco é um ato de proteção e responsabilidade. Através dessa atitude, aumentamos as
                     chances
                     de resgate, cuidados adequados e, quem sabe, um novo lar cheio de amor.</p><br>
@@ -125,7 +132,7 @@
                     para
                     apoiar quem decide fazer a diferença.</p><br>
 
-                <p>Assiste vídeo abaixo e evite este tipo de situação:</p>
+                <p>Assista ao vídeo abaixo e evite este tipo de situação:</p>
             </div>
 
             <div class="flex secao-video">
@@ -139,11 +146,11 @@
         <!-- formulario com os campo para sinalizar -->
         <section id="sinalizar" class="cor-de-fundo-da-pagina">
             <div class="flex image-sinalizar">
-                <img src="img/icone-sinalizar.png" alt="bandeira-de-sinalizar" width="50" height="50">
+                <img src="img/icone-sinalizar.png" alt="Bandeira de sinalizar" width="50" height="50">
                 <h4>Sinalizar</h4>
             </div>
 
-            <form name="cadastro" method="post" action="teste.php">
+            <form name="cadastro" method="post">
                 <!-- campos de botoes -->
 
                 <fieldset id="dados-basicos" class="formulario">
@@ -197,12 +204,14 @@
                     <div class="elementos-do-form">
                         <label for="descricao" class="nome-da-caixa">Descrição</label>
                         <textarea required class="descricao-da-caixa" id="descricao" name="descricao" rows="10"
-                            cols="40"></textarea>
+                            cols="40" minlength="20" maxlength="300"
+                            placeholder="Descreva o animal: aparência, estado de saúde, comportamento, local onde foi visto..."></textarea>
+                        <small id="contador-descricao">0 / 300 caracteres</small>
                     </div>
 
                     <div class="elementos-do-form">
                         <label for="meufile" class="flex">Selecione uma foto do animal:</label>
-                        <input required type="file" id="meufile" name="meufile">
+                        <input required type="file" id="meufile" name="meufile" accept=".jpg, .jpeg, .png">
                     </div>
                 </fieldset>
 
@@ -216,8 +225,8 @@
 
                     <div class="elementos-do-form">
                         <label for="numero" class="nome-da-caixa">Número</label>
-                        <input type="text" placeholder="Numero do local" required id="numero" name="numero"
-                            class="caixa-input">
+                        <input type="number" placeholder="Numero do local" required id="numero" name="numero"
+                            class="caixa-input" min="1">
                     </div>
 
                     <div class="elementos-do-form">
@@ -324,7 +333,7 @@
 
     <footer class="rodape container">
         <div class="texto-footer">
-            <p>Todos Direitos Reservados</p><br>
+            <p>Todos os direitos reservados</p><br>
             <p>&copy; 2026 - PetNest</p><br>
             <p>Desenvolvido por Juliana Miranda | Estudante de Tecnologia</p>
         </div>

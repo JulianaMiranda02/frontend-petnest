@@ -1,0 +1,109 @@
+/* ================= RESPONSIVIDADE GLOBAL ================= */
+
+@media (max-width: 768px) {
+
+    /* CONTAINER */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* ================= MENU ================= */
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    /* ================= SEÇÃO PRINCIPAL ================= */
+
+    .principal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mulher-com-cachorro {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .imagem-mulher-cachorro {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* ================= SEÇÃO CÍRCULOS ================= */
+
+    section.flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .circulo {
+        width: 90%;
+        height: auto;
+    }
+
+    /* ================= SOBRE ================= */
+
+    .secao-video iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ================= FORMULÁRIO ================= */
+
+    .formulario {
+        padding: 15px;
+    }
+
+    .opcoes-porte {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* ================= FAQ ================= */
+
+    .pergunta {
+        width: 100%;
+    }
+
+    /* ================= FOOTER ================= */
+
+    .container-link {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* ================= ENCONTRE PET ================= */
+
+    .campo-pesquisar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .borda-caixa {
+        width: 100%;
+    }
+
+    .conteudo-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .conteudo-img-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .bnt-adotado {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
