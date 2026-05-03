@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Plataforma para adoção de animais e sinalização de pets abandonados.">
     <meta name="keywords" content="adoção de pets, animais abandonados, cachorro, gato, adoção responsável">
-    
+
     <title>PetNest</title>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="stylesheet" href="css/encontrepet.css" type="text/css">
@@ -32,7 +32,7 @@
                 <li><a href="#sobre">Sobre Nós</a></li>
                 <li><a href="#perguntas">Perguntas Frequentes</a></li>
                 <li><a href="#adote">Adote</a></li>
-                <li><a href="#sinalizar" class="botao">Sinalizar</a></li>
+                <li><a href="#sinalizar" class="botao btn-sinalizar">Sinalizar</a></li>
             </ul>
         </nav>
 
@@ -203,15 +203,25 @@
 
                     <div class="elementos-do-form">
                         <label for="descricao" class="nome-da-caixa">Descrição</label>
-                        <textarea required class="descricao-da-caixa" id="descricao" name="descricao" rows="10"
-                            cols="40" minlength="20" maxlength="300"
+                        <textarea required class="descricao-da-caixa" id="descricao" name="descricao" rows="6" cols="40"
+                            minlength="20" maxlength="300"
                             placeholder="Descreva o animal: aparência, estado de saúde, comportamento, local onde foi visto..."></textarea>
                         <small id="contador-descricao">0 / 300 caracteres</small>
                     </div>
 
                     <div class="elementos-do-form">
-                        <label for="meufile" class="flex">Selecione uma foto do animal:</label>
+                        <label class="nome-da-caixa">Foto do pet</label>
+
                         <input required type="file" id="meufile" name="meufile" accept=".jpg, .jpeg, .png">
+
+                        <label for="meufile" class="upload-box">
+                            <div id="uploadContent">
+                                <p>Clique para selecionar uma imagem</p>
+                                <small>Use uma foto clara do animal</small>
+                            </div>
+
+                            <img id="preview" />
+                        </label>
                     </div>
                 </fieldset>
 
@@ -365,6 +375,21 @@
             <p>Ajudar animais abandonados e promover adoção responsável.</p><br>
         </div>
     </footer>
+    <script>
+        const input = document.getElementById("meufile");
+        const preview = document.getElementById("preview");
+        const content = document.getElementById("uploadContent");
+
+        input.addEventListener("change", function () {
+            const file = this.files[0];
+
+            if (file) {
+                preview.src = URL.createObjectURL(file);
+                preview.style.display = "block";
+                content.style.display = "none"; // esconde texto
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -7,12 +7,25 @@
         padding: 0 15px;
     }
 
+    html{
+        scroll-padding-top: 175px;
+    }
+
     /* ================= MENU ================= */
 
     .menu {
         flex-direction: column;
-        gap: 10px;
         align-items: center;
+        gap: 5px;
+    }
+
+    .logotipo{
+        margin: 0px;
+        margin-bottom: -15px;
+    }
+
+    .btn-sinalizar {
+        margin-bottom: 8px;
     }
 
     /* ================= SEÇÃO PRINCIPAL ================= */
@@ -22,10 +35,7 @@
         text-align: center;
     }
 
-    .mulher-com-cachorro {
-        margin-left: 0;
-        margin-top: 20px;
-    }
+
 
     .imagem-mulher-cachorro {
         width: 100%;
@@ -65,7 +75,7 @@
     /* ================= FAQ ================= */
 
     .pergunta {
-        width: 100%;
+        width: 90%;
     }
 
     /* ================= FOOTER ================= */
@@ -81,6 +91,7 @@
     .campo-pesquisar {
         flex-direction: column;
         align-items: stretch;
+        width: 100%;
     }
 
     .borda-caixa {
