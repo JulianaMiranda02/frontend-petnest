@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+.info .tipo-do-animal{
+    font-weight: bold;
+}
+
 .campo-pesquisar {
     padding: 28px;
     justify-content: flex-start;
@@ -41,6 +45,10 @@
 .conteudo-img-card {
     width: 130px;
     height: 130px;
+}
+
+.info {
+    width: 100%;
 }
 
 .info p {
