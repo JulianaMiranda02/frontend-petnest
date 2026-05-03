@@ -190,14 +190,12 @@
                     <div class="elementos-do-form">
                         <label class="nome-da-caixa">Porte</label>
                         <div class="flex opcoes-porte">
-                            <input required type="radio" id="pequeno" name="porte" value="pequeno" class="radio-option">
-                            <label for="pequeno">Pequeno</label>
-
-                            <input required type="radio" id="medio" name="porte" value="medio" class="radio-option">
-                            <label for="medio">Médio</label>
-
-                            <input required type="radio" id="grande" name="porte" value="grande" class="radio-option">
-                            <label for="grande">Grande</label>
+                            <select required id="tipo" name="tipo" class="caixa-input">
+                            <option value="" disabled selected>Escolha uma opção</option>
+                            <option value="pequeno">Pequeno</option>
+                            <option value="medio">Médio</option>
+                            <option value="grande">Grande</option>
+                        </select>
                         </div>
                     </div>
 
@@ -213,15 +211,8 @@
                         <label class="nome-da-caixa">Foto do pet</label>
 
                         <input required type="file" id="meufile" name="meufile" accept=".jpg, .jpeg, .png">
-
-                        <label for="meufile" class="upload-box">
-                            <div id="uploadContent">
-                                <p>Clique para selecionar uma imagem</p>
-                                <small>Use uma foto clara do animal</small>
-                            </div>
-
-                            <img id="preview" />
-                        </label>
+                        
+                        <img id="preview" />
                     </div>
                 </fieldset>
 
@@ -377,16 +368,14 @@
     </footer>
     <script>
         const input = document.getElementById("meufile");
-        const preview = document.getElementById("preview");
-        const content = document.getElementById("uploadContent");
+        const preview = document.getElementById("preview"); 
 
         input.addEventListener("change", function () {
             const file = this.files[0];
 
             if (file) {
                 preview.src = URL.createObjectURL(file);
-                preview.style.display = "block";
-                content.style.display = "none"; // esconde texto
+                preview.style.display = "block"; 
             }
         });
     </script>

@@ -10,7 +10,7 @@
 
 html {
     /*Isso faz a rolagem suave quando clicar no menu */
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     scroll-padding-top: 104px;
 }
 
@@ -32,6 +32,10 @@ body {
     background-color: #D4C7C3
 }
 
+.menu .btn-sinalizar:visited{
+    color: #EFE3D9;
+}
+
 .menu a:hover {
     color: #B54124;
     font-weight: bold;
@@ -41,6 +45,8 @@ body {
     color: #552814;
     /* mesma cor do link normal */
 }
+
+
 
 /* ------------------------------------------------------------------------------------------------------ */
 
@@ -361,9 +367,7 @@ header {
 
 /* ================= UPLOAD DE IMAGEM ================= */
 
-#meufile {
-    display: none;
-}
+
 
 .upload-box {
     display: block;
@@ -377,9 +381,10 @@ header {
     overflow: hidden;
 }
 
-#preview {
+#preview { 
     display: none;
     max-height:300px;
+    max-width: 100%;
     border-radius: 12px;
-    margin: auto;
+    margin: 10px auto;
 }
