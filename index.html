@@ -17,6 +17,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <script src="/js/script.js" defer></script>
 </head>
 
 
@@ -210,9 +212,9 @@
                     <div class="elementos-do-form">
                         <label class="nome-da-caixa">Foto do pet</label>
 
-                        <input required type="file" id="meufile" name="meufile" accept=".jpg, .jpeg, .png">
+                        <input required type="file" id="meufile" class="input-file" name="meufile" accept=".jpg, .jpeg, .png">
                         
-                        <img id="preview" alt="Imagem de pré-visualização" src="." />
+                        <img id="preview" alt="Imagem de pré-visualização" src=".">
                     </div>
                 </fieldset>
 
@@ -340,7 +342,7 @@
         </div>
         <div class="flex container-link">
             <div class="centralizar-link">
-                <h5>Links</h5>
+                <h5 class="subtitulo-footer">Links</h5>
                 <div class="link-footer">
                     <div class="flex">
                         <div><a href="#adote" class="link-footer">Adote</a></div>
@@ -355,7 +357,7 @@
 
             <div class="redes">
                 <div class="imagem-github">
-                    <h5>Redes</h5><br>
+                    <h5 class="subtitulo-footer">Redes</h5><br>
                     <a href="https://github.com/JulianaMiranda02" target="_blank" rel="noopener noreferrer">
                         <img src="img/github.png" alt="GitHub" width="20"></a>
                 </div>
@@ -366,19 +368,6 @@
             <p>Ajudar animais abandonados e promover adoção responsável.</p><br>
         </div>
     </footer>
-    <script>
-        const input = document.getElementById("meufile");
-        const preview = document.getElementById("preview"); 
-
-        input.addEventListener("change", function () {
-            const file = this.files[0];
-
-            if (file) {
-                preview.src = URL.createObjectURL(file);
-                preview.style.display = "block"; 
-            }
-        });
-    </script>
 </body>
 
 </html>

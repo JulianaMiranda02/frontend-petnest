@@ -241,6 +241,10 @@ header {
     padding: 6px;
 }
 
+.input-file{
+    width: 100%;
+}
+
 .caixa-input {
     padding: 6px;
     width: 100%;
@@ -323,6 +327,10 @@ header {
 .rodape {
     margin-top: 30px;
     background-color: #EFE3D9;
+}
+
+.subtitulo-footer{
+    font-size: 15px;
 }
 
 .texto-footer {
