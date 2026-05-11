@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="js/script-encontrepet.js" defer></script>
 </head>
 
 <body>
@@ -78,40 +79,18 @@
                             <option value="TO">TO</option>
                         </select>
 
-                        <button class="botao">Pesquisar</button>
+                        <button onclick="pesquisarAnimais()" type="button" class="botao" id="pesquisar">Pesquisar</button>
                     </div>
                 </div>
             </form>
         </section>
 
         <section>
-            <div class="flex centralizar-conteudo animais">
-                <div class="card-animal">
-                    <div class=" flex conteudo-card">
-                        <img class="conteudo-img-card" src="/img/cachorro.png" alt="cachorro-pequeno">
-                        <div class="info">
-                            <p class="tipo-do-animal">Cachorro</p>
-                            <p>Porte: Pequeno</p>
-                            <p>Sexo: Fêmea</p>
-                            <p>Endereço: Rua Marcos Almeida, 300 - Jd Sta Genebra, Campinas</p>
-                            <p>Estado: SP</p>
-                            <p>Telefone: 19-9999-0000</p>
-                            
-                        </div>
-                    </div>
-                    <p class="descricao">Descrição: Cachorro caramelo, porte médio, cerca de 2–3 anos, encontrada
-                        próxima à Praça Central,
-                        magra
-                        porém sem ferimentos, mansa e sem identificação.</p>
-                    <div class="bnt-adotado">
-                        <button class=" botao botao-adotado">Adotado</button>
-                    </div>
-                </div>
-            </div>
+            <div class="flex centralizar-conteudo animais" id="exibir_animais"></div>
         </section>
 
     </main>
-    
+
     <footer class="rodape container">
         <div class="texto-footer">
             <p>Todos os direitos reservados</p><br>

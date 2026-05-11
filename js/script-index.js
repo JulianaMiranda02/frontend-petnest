@@ -15,7 +15,7 @@ const form_cadastro = document.getElementById("form_cadastro");
 form_cadastro.addEventListener("submit", (evento) => {
 evento.preventDefault(); // evita o mecanismo antigo de enviar dados (nao usa fetch)
 
-const nome = form_cadastro.nome.value; 
+const nome_sinalizador = form_cadastro.nome.value;  
 const telefone = form_cadastro.telefone.value;
 const sexo = form_cadastro.sexo.value;
 const tipo = form_cadastro.tipo.value;
@@ -31,13 +31,13 @@ const estado = form_cadastro.estado.value;
 const cep = form_cadastro.cep.value;
 
 const novoAnimal = {
-        nome: nome,
+        nome_sinalizador: nome_sinalizador,
         telefone: telefone,
         sexo: sexo,
         tipo: tipo,
         porte: porte,
-        descrição: descricao,
-        // foto = foto,//rever
+        descricao: descricao,
+        link_foto: "https://nimages.champdogs.net/81134/p91997872.webp",
         rua: rua,
         numero: numero,
         bairro: bairro,
