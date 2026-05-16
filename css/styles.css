@@ -32,7 +32,7 @@ body {
     background-color: #D4C7C3
 }
 
-.menu .btn-sinalizar:visited{
+.menu .btn-sinalizar:visited {
     color: #EFE3D9;
 }
 
@@ -42,7 +42,8 @@ body {
 }
 
 .menu a:visited {
-    color: #552814;
+    text-decoration: none;
+    font-size: 16px;
     /* mesma cor do link normal */
 }
 
@@ -81,6 +82,9 @@ header {
 .menu a {
     text-decoration: none;
     font-size: 16px;
+    color: #552814;
+
+
 }
 
 .bem-vindo {
@@ -154,6 +158,7 @@ header {
 
 .botao-adote-alinhar {
     justify-content: center;
+
 }
 
 .botao {
@@ -164,7 +169,7 @@ header {
     font-size: 12px;
     font-weight: bold;
     color: #F5EDE3;
-    background-color: #aa6a4e;
+    background-color: #5d4037;
     cursor: pointer;
     border: none;
     align-items: center;
@@ -180,6 +185,20 @@ header {
 .botao:visited {
     color: #F5EDE3;
     /* mantém a cor mesmo depois de clicar */
+}
+
+/* verificar este campo */
+.mensagem-sucesso {
+    display: none; 
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    width: fit-content;
+    margin: 10px auto;
 }
 
 
@@ -228,12 +247,6 @@ header {
     padding: 5px;
 }
 
-/* #dados-basicos,
-#localizacao {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-} */
 
 /* ----------------------------------------------------------------------------------------- */
 
@@ -241,7 +254,7 @@ header {
     padding: 6px;
 }
 
-.input-file{
+.input-file {
     width: 100%;
 }
 
@@ -329,7 +342,8 @@ header {
     background-color: #EFE3D9;
 }
 
-.subtitulo-footer{
+.subtitulo-footer {
+    margin-bottom: 7px;
     font-size: 15px;
 }
 
@@ -357,8 +371,20 @@ header {
 
 .imagem-github {
     text-align: center;
-
 }
+
+.imagem-github img {
+    width: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.imagem-github img:hover {
+    transform: scale(1.15) translateY(-4px);
+    filter: drop-shadow(0 0 8px white);
+}
+
+
 
 .centralizar-link {
     text-align: center;
@@ -389,10 +415,12 @@ header {
     overflow: hidden;
 }
 
-#preview { 
+#preview {
     display: none;
-    max-height:300px;
+    max-height: 300px;
     max-width: 100%;
     border-radius: 12px;
     margin: 10px auto;
 }
+
+

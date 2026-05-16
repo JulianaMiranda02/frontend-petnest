@@ -35,6 +35,7 @@
                 <li><a href="#perguntas">Perguntas Frequentes</a></li>
                 <li><a href="#adote">Adote</a></li>
                 <li><a href="#sinalizar" class="botao btn-sinalizar">Sinalizar</a></li>
+
             </ul>
         </nav>
 
@@ -89,7 +90,7 @@
                     <div class="flex texto-imagem">
                         <img class="imagem-card" src="img/pessoas-passeando-com-cachorro.jpg"
                             alt="Pessoas passeando com o cachorro na rua">
-                        <p class="texto-img">Milhares de animais estão esperando um humano para chamar de seu.</p>
+                        <p class="texto-img">Milhares de animais aguardam um novo lar.</p>
                     </div>
                 </div>
             </article>
@@ -100,7 +101,7 @@
                     <div class="flex texto-imagem">
                         <img class="imagem-card" src="img/moca-brincando-pets.png"
                             alt="Moça brincando com seus pets em casa">
-                        <p class="texto-img">Adotar um pet é transformar uma vida: você oferece amor e segurança.</p>
+                        <p class="texto-img">Adotar é dar amor e segurança.</p>
                     </div>
                 </div>
             </article>
@@ -193,11 +194,11 @@
                         <label class="nome-da-caixa">Porte</label>
                         <div class="flex opcoes-porte">
                             <select required id="porte" name="porte" class="caixa-input">
-                            <option value="" disabled selected>Escolha uma opção</option>
-                            <option value="pequeno">Pequeno</option>
-                            <option value="medio">Médio</option>
-                            <option value="grande">Grande</option>
-                        </select>
+                                <option value="" disabled selected>Escolha uma opção</option>
+                                <option value="pequeno">Pequeno</option>
+                                <option value="medio">Médio</option>
+                                <option value="grande">Grande</option>
+                            </select>
                         </div>
                     </div>
 
@@ -212,8 +213,9 @@
                     <div class="elementos-do-form">
                         <label class="nome-da-caixa">Foto do pet</label>
 
-                        <input required type="file" id="meufile" class="input-file" name="meufile" accept=".jpg, .jpeg, .png">
-                        
+                        <input required type="file" id="meufile" class="input-file" name="meufile"
+                            accept=".jpg, .jpeg, .png">
+
                         <img id="preview" alt="Imagem de pré-visualização" src=".">
                     </div>
                 </fieldset>
@@ -286,10 +288,13 @@
                     </div>
                 </fieldset>
                 <div class="flex botao-formulario">
-                    <button type="submit"  id="sinalizar-animal" class="botao bnt-form">Enviar</button>
-                    <button type="reset" class="botao bnt-form">Limpar</button>
+                    <button type="submit" id="sinalizar-animal" class="botao bnt-form">Enviar</button>
+                    <button type="reset" class="botao bnt-form" id="btn-limpar">Limpar</button>
                 </div>
             </form>
+            <div id="mensagem-sucesso" class="mensagem-sucesso">
+                Formulário enviado com sucesso!
+            </div>
         </section>
 
         <section id="perguntas">
@@ -298,9 +303,9 @@
             <article class="pergunta">
                 <div class="flex borda-do-quadrado">
                     <h5>Onde denunciar maus tratos?</h5>
-                    <p>A denúncia pode ser feita pela Polícia Militar no 190, pela Delegacia de Polícia Civil ou
-                        pelo
-                        aplicativo Proteção Animal (caso seu estado ofereça).</p>
+                    <p>A denúncia pode ser feita pela Polícia Militar (190), pela Delegacia de Polícia Civil, pelo
+                        aplicativo Proteção Animal (caso disponível no seu estado) ou pelo Disque Denúncia (181), de
+                        forma anônima.</p>
                 </div>
             </article>
 
@@ -317,10 +322,10 @@
             <article class="pergunta">
                 <div class="flex borda-do-quadrado">
                     <h5>Como posso adotar um animal?</h5>
-                    <p>Você pode preencher nosso formulário de adoção e nossa equipe entrará em contato para
-                        orientar
-                        toda a
-                        etapa de avaliação e escolha do pet ideal.</p>
+                    <p>Você pode acessar a seção “Adote” no menu de navegação do site. Ao clicar no botão “Adote”, será
+                        aberta a página “Encontre seu pet”, onde você poderá pesquisar animais disponíveis na sua
+                        região. Também estarão disponíveis os contatos da pessoa responsável pelo anúncio para que você
+                        possa entrar em contato.</p>
                 </div>
             </article>
 
@@ -357,9 +362,9 @@
 
             <div class="redes">
                 <div class="imagem-github">
-                    <h5 class="subtitulo-footer">Redes</h5><br>
+                    <h5 class="subtitulo-footer">Redes</h5>
                     <a href="https://github.com/JulianaMiranda02" target="_blank" rel="noopener noreferrer">
-                        <img src="img/github.png" alt="GitHub" width="20"></a>
+                        <img src="img/github.png" alt="GitHub"></a>
                 </div>
             </div>
         </div>

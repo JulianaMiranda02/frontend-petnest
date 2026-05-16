@@ -24,22 +24,21 @@ function pesquisarAnimais() {
                 item.innerHTML = `
                 <div class="card-animal">
                     <div class="flex conteudo-card">
-                        <img class="conteudo-img-card" src="/img/cachorro.png" alt="cachorro-pequeno">
+                        <img src="${animal.link_foto}">
                         
                         <div class="info">
-                            <p class="tipo-do-animal">${animal.tipo}</p>
+                            <p class="tipo-do-animal">${animal.tipo}</p><br>
                             <p>Porte: ${animal.porte}</p>
                             <p>Sexo: ${animal.sexo}</p>
                             <p>Endereço: ${animal.rua}, ${animal.numero} - ${animal.bairro}, ${animal.cidade}</p>
                             <p>Estado: ${animal.estado}</p>
                             <p>Sinalizado por: ${animal.nome_sinalizador}</p>
                             <p>Telefone: ${animal.telefone}</p>
-                        </div>
-                    </div>
-
-                    <p class="descricao">
+                            <p class="descricao">
                         Descrição: ${animal.descricao}
                     </p>
+                        </div>
+                    </div>
 
                     <div class="bnt-adotado">
                         <button class=" botao botao-adotado">Adotado</button>
