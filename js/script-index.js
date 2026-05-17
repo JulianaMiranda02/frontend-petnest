@@ -48,8 +48,6 @@ form_cadastro.addEventListener("submit", async (evento) => {
 
     const base64 = await converterParaBase64(fotoArquivo);
 
-    console.log(base64);
-
     const rua = form_cadastro.rua.value;
     const numero = form_cadastro.numero.value;
     const bairro = form_cadastro.bairro.value;
@@ -64,7 +62,7 @@ form_cadastro.addEventListener("submit", async (evento) => {
         tipo: tipo,
         porte: porte,
         descricao: descricao,
-        link_foto: '',
+        imagem: base64,
         rua: rua,
         numero: numero,
         bairro: bairro,
