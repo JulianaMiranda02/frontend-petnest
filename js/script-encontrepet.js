@@ -24,7 +24,7 @@ function pesquisarAnimais() {
                 item.innerHTML = `
                 <div class="card-animal">
                     <div class="flex conteudo-card">
-                        <img src="${animal.link_foto}">
+                        <img class="imagem-animal" src="${animal.imagem}">
                         
                         <div class="info">
                             <p class="tipo-do-animal">${animal.tipo}</p><br>

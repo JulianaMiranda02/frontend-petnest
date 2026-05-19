@@ -47,10 +47,8 @@
     align-items: flex-start;
 }
 
-.conteudo-img-card {
-    width: 232px;
-    height: 230px;
-    text-align: center;
+.imagem-animal {
+    width: 200px;
 }
 
 .info {

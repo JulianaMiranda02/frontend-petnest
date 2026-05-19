@@ -63,6 +63,7 @@ form_cadastro.addEventListener("submit", async (evento) => {
         porte: porte,
         descricao: descricao,
         imagem: base64,
+        type_image: fotoArquivo.type, //tipo da imagem: png, jpg ou jpeg.
         rua: rua,
         numero: numero,
         bairro: bairro,
