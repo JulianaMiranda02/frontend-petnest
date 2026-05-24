@@ -7,7 +7,7 @@
         padding: 0 15px;
     }
 
-    html{
+    html {
         scroll-padding-top: 175px;
     }
 
@@ -19,7 +19,7 @@
         gap: 5px;
     }
 
-    .logotipo{
+    .logotipo {
         margin: 0px;
         margin-bottom: -15px;
     }
@@ -103,6 +103,13 @@
         align-items: center;
     }
 
+    .imagem-animal {
+        width: 100%;
+        max-width: 250px;
+        height: 220px;
+        object-fit: cover;
+    }
+
     .card {
         width: 100%;
         max-width: 350px;
@@ -116,5 +123,15 @@
     .bnt-adotado {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .voltar-topo {
+        width: 45px;
+        height: 45px;
+
+        font-size: 22px;
+
+        bottom: 15px;
+        right: 15px;
     }
 }

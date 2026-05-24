@@ -17,7 +17,7 @@
     <script src="js/script-encontrepet.js" defer></script>
 </head>
 
-<body>
+<body id="topo">
     <header>
         <nav>
             <ul class="menu container flex">
@@ -49,7 +49,7 @@
                         <label for="estado">Estado:</label>
 
                         <select required id="estado" name="estado" class="borda-caixa">
-                            <option value="" disabled selected>Selecione</option>
+                            <option value=""selected>Selecione</option>
                             <option value="AC">AC</option>
                             <option value="AL">AL</option>
                             <option value="AP">AP</option>
@@ -79,15 +79,35 @@
                             <option value="TO">TO</option>
                         </select>
 
-                        <button onclick="pesquisarAnimais()" type="button" class="botao" id="pesquisar">Pesquisar</button>
+                        <button onclick="pesquisarAnimais()" type="button" class="botao"
+                            id="pesquisar">Pesquisar</button>
                     </div>
                 </div>
+
             </form>
+            <div id="mensagem-erro"></div>
         </section>
 
         <section>
             <div class="flex centralizar-conteudo animais" id="exibir_animais"></div>
+            <div id="mensagem-vazia"></div>
         </section>
+
+        <div id="modal-adotado" class="modal">
+            <div class="caixa-modal">
+                <h2>Confirmação</h2>
+
+                <p>Esse animal foi adotado? ❤️</p>
+
+                <div class="botoes-modal">
+                    <button id="confirmar" class="botao">Sim</button>
+
+                    <button id="cancelar" class="botao cancelar">
+                        Cancelar
+                    </button>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -102,12 +122,12 @@
                 <h2 class="subtitulo-footer">Links</h2>
                 <div class="link-footer">
                     <div class="flex">
-                        <div><a href="#adote" class="link-footer">Adote</a></div>
-                        <div><a href="#sobre" class="link-footer">Sobre Nós</a></div>
+                        <div><a href="index.html#adote" class="link-footer">Adote</a></div>
+                        <div><a href="index.html#sobre" class="link-footer">Sobre Nós</a></div>
                     </div>
                     <div class="flex">
-                        <div><a href="#perguntas" class="link-footer">FAQ</a></div>
-                        <div><a href="#sinalizar" class="link-footer">Sinalizar</a></div>
+                        <div><a href="index.html#perguntas" class="link-footer">FAQ</a></div>
+                        <div><a href="index.html#sinalizar" class="link-footer">Sinalizar</a></div>
                     </div>
                 </div>
             </div>
@@ -126,6 +146,9 @@
         </div>
     </footer>
 
+    <a href="#topo" class="voltar-topo">
+        ↑
+    </a>
 </body>
 
 </html>

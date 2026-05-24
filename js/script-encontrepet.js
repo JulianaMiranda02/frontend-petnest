@@ -1,6 +1,60 @@
+
+function deletarAnimal(id) {
+    //Confirmar antes de remover animal
+    const modal = document.getElementById("modal-adotado");
+
+    modal.style.display = "flex";
+    document.getElementById("confirmar").onclick = function () {
+
+        fetch(`http://localhost:1234/deletar-animal`, {
+            method: "DELETE",
+            body: JSON.stringify({
+                id: id
+            })
+        })
+            .then(() => {
+                // remover da tela (DOM), a div do animal
+                // essas divs tem ids. com prefixo 'div-animal-' e o id do animal
+                const divAnimal = document.getElementById(`div-animal-${id}`);
+
+                if (divAnimal) {
+                    divAnimal.remove();
+                }
+                modal.style.display = "none";
+            });
+    };
+    document.getElementById("cancelar").onclick = function () {
+        modal.style.display = "none";
+    };
+
+}
+
 function pesquisarAnimais() {
     let cidade = document.getElementById("cidade").value;
     let estado = document.getElementById("estado").value;
+
+    const mensagemErro = document.getElementById("mensagem-erro");
+    
+    // pega lista de animais
+    const lista = document.getElementById("exibir_animais");
+    
+    // LIMPA OS CARDS ANTES DA NOVA PESQUISA
+    lista.innerHTML = "";
+
+
+    // validação
+    if (cidade.trim() === "" || estado === "") {
+
+        mensagemErro.innerHTML = "Digite a cidade e selecione o estado.";
+
+        // limpa mensagem de nenhum animal
+        document.getElementById("mensagem-vazia").innerHTML = "";
+
+
+        return;
+    }
+    // limpa mensagem de erro
+    mensagemErro.innerHTML = "";
 
     console.log(cidade);
     console.log(estado);
@@ -11,15 +65,32 @@ function pesquisarAnimais() {
         .then(resposta => resposta.json())
         .then((animais_perdidos) => {
 
-            const lista = document.getElementById("exibir_animais");
+            const mensagem = document.getElementById("mensagem-vazia");
 
-            // limpa os cards antigos
-            lista.innerHTML = "";
+            if (animais_perdidos.length === 0) {
+                mensagem.innerHTML = `
+                <div class="sem-animais">
+
+            <img src="img/dog-cat-feliz.gif" 
+                 alt="Cachorro e gato feliz"
+                 class="gif-cachorro">
+
+            <p>
+                Nenhum pet encontrado nessa região 
+            </p>
+
+        </div>`
+
+            } else {
+                mensagem.innerHTML = "";
+            }
 
             for (let animal of animais_perdidos) {
                 console.log(animal);
 
                 const item = document.createElement("div");
+                item.id = `div-animal-${animal.id}`;
+
 
                 item.innerHTML = `
                 <div class="card-animal">
@@ -41,10 +112,12 @@ function pesquisarAnimais() {
                     </div>
 
                     <div class="bnt-adotado">
-                        <button class=" botao botao-adotado">Adotado</button>
+                        <button class="botao botao-adotado" onclick="deletarAnimal(${animal.id})">Remover da lista</button>
                     </div>
                 </div>
                 `;
+
+
                 lista.appendChild(item);
             }
 
@@ -53,6 +126,10 @@ function pesquisarAnimais() {
             console.log("Erro:", error);
         });
 
+    // limpa os campos para uma nova pesquisa
+    document.getElementById("cidade").value = "";
+
+    document.getElementById("estado").selectedIndex = 0;
 
 }
 
