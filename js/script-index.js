@@ -4,8 +4,8 @@ const preview = document.getElementById("preview");
 const botaoLimpar = document.getElementById("btn-limpar");
 
 // Quando o usuario clica em limpar
-botaoLimpar.addEventListener("click", function(){
-     preview.style.display = "none";
+botaoLimpar.addEventListener("click", function () {
+    preview.style.display = "none";
 })
 
 input.addEventListener("change", function () {
@@ -19,6 +19,7 @@ input.addEventListener("change", function () {
 
 const form_cadastro = document.getElementById("form_cadastro");
 const mensagemSucesso = document.getElementById("mensagem-sucesso");
+const mensagemErro = document.getElementById("mensagem-erro");
 
 
 form_cadastro.addEventListener("submit", async (evento) => {
@@ -71,8 +72,18 @@ form_cadastro.addEventListener("submit", async (evento) => {
         estado: estado,
         cep: cep
     }
-    
+
     console.log(novoAnimal);
+
+    function mostraMensagemDeErro() {
+        mensagemErro.style.display = "block";
+
+        // esconde depois de 4 segundos
+        setTimeout(() => {
+            mensagemErro.style.display = "none";
+        }, 4000);
+
+    }
 
     fetch("http://localhost:1234/sinalizar-animal", {
         method: "POST",
@@ -83,8 +94,12 @@ form_cadastro.addEventListener("submit", async (evento) => {
             novoAnimal
         )
     })
-        .then(resposta => resposta.text())
         .then(resposta => {
+            if (!resposta.ok) {
+                mostraMensagemDeErro()
+                return;
+            }
+
             console.log(resposta);
             // mostra a mensagem de sucesso
             mensagemSucesso.style.display = "block";
@@ -97,5 +112,8 @@ form_cadastro.addEventListener("submit", async (evento) => {
             setTimeout(() => {
                 mensagemSucesso.style.display = "none";
             }, 4000);
+        }).catch(() => {
+            mostraMensagemDeErro()
+            return;
         })
 });

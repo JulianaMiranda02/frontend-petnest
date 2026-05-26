@@ -126,11 +126,6 @@ function pesquisarAnimais() {
             console.log("Erro:", error);
         });
 
-    // limpa os campos para uma nova pesquisa
-    document.getElementById("cidade").value = "";
-
-    document.getElementById("estado").selectedIndex = 0;
-
 }
 
 
