@@ -1,6 +1,6 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+<mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="UyAteyp0o7mO9zRSf61e">
-    <mxGraphModel dx="2571" dy="3396" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4267" dy="4062" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -55,7 +55,7 @@
         <mxCell id="P0DBH1obBlqNHHECnhRg-6" parent="P0DBH1obBlqNHHECnhRg-22" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.computer;pointerEvents=1;fontSize=30;" value="Netflix&lt;br&gt;IP: 234.12.4.123" vertex="1">
           <mxGeometry height="150" width="180" as="geometry" />
         </mxCell>
-        <mxCell id="P0DBH1obBlqNHHECnhRg-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;" value="Quero Acessar petnest.social" vertex="1">
+        <mxCell id="P0DBH1obBlqNHHECnhRg-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=24;" value="Quero Acessar petnest.com.br" vertex="1">
           <mxGeometry height="90" width="360" x="-20" y="260" as="geometry" />
         </mxCell>
         <mxCell id="P0DBH1obBlqNHHECnhRg-57" connectable="0" parent="1" style="group" value="" vertex="1">
@@ -64,7 +64,7 @@
         <mxCell id="P0DBH1obBlqNHHECnhRg-54" parent="P0DBH1obBlqNHHECnhRg-57" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=17;" value="Tabela Domínio =&amp;gt; IP" vertex="1">
           <mxGeometry height="250" width="360" as="geometry" />
         </mxCell>
-        <mxCell id="P0DBH1obBlqNHHECnhRg-55" parent="P0DBH1obBlqNHHECnhRg-57" style="rounded=0;whiteSpace=wrap;html=1;fontSize=21;" value="Domínio&lt;br&gt;netflix.com&lt;div&gt;youtube.com&lt;/div&gt;&lt;div&gt;petnest.social&lt;/div&gt;" vertex="1">
+        <mxCell id="P0DBH1obBlqNHHECnhRg-55" parent="P0DBH1obBlqNHHECnhRg-57" style="rounded=0;whiteSpace=wrap;html=1;fontSize=21;" value="Domínio&lt;br&gt;netflix.com&lt;div&gt;youtube.com&lt;/div&gt;&lt;div&gt;petnest.com.br&lt;/div&gt;" vertex="1">
           <mxGeometry height="210" width="190" y="40" as="geometry" />
         </mxCell>
         <mxCell id="P0DBH1obBlqNHHECnhRg-56" parent="P0DBH1obBlqNHHECnhRg-57" style="rounded=0;whiteSpace=wrap;html=1;fontSize=21;" value="&lt;font&gt;IP&lt;/font&gt;&lt;div&gt;&lt;font&gt;&lt;span style=&quot;white-space: nowrap;&quot;&gt;&lt;font&gt;234.12.4.123&lt;br&gt;83.24.3.293&lt;br&gt;&lt;/font&gt;&lt;/span&gt;32.435.43.4&lt;/font&gt;&lt;/div&gt;" vertex="1">
