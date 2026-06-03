@@ -85,7 +85,7 @@ form_cadastro.addEventListener("submit", async (evento) => {
 
     }
 
-    fetch("http://18.228.86.52:1234/sinalizar-animal", {
+    fetch("https://18.228.86.52:1234/sinalizar-animal", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

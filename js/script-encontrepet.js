@@ -6,7 +6,7 @@ function deletarAnimal(id) {
     modal.style.display = "flex";
     document.getElementById("confirmar").onclick = function () {
 
-        fetch(`http://18.228.86.52:1234/deletar-animal`, {
+        fetch(`https://18.228.86.52:1234/deletar-animal`, {
             method: "DELETE",
             body: JSON.stringify({
                 id: id
@@ -59,7 +59,7 @@ function pesquisarAnimais() {
     console.log(cidade);
     console.log(estado);
 
-    fetch(`http://18.228.86.52:1234/animais-perdidos?cidade=${cidade}&estado=${estado}`, {
+    fetch(`https://18.228.86.52:1234/animais-perdidos?cidade=${cidade}&estado=${estado}`, {
         method: "GET",
     })
         .then(resposta => resposta.json())
