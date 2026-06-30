@@ -2,22 +2,31 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título exibido na aba do navegador -->
     <title>Encontre seu Pet</title>
+
+    <!-- Arquivos responsáveis pela aparência e responsividade da página -->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="stylesheet" href="css/encontrepet.css" type="text/css">
     <link rel="stylesheet" href="css/responsive.css" type="text/css">
 
+    <!-- Importação das fontes utilizadas no projeto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <!-- Arquivo JavaScript responsável pelas pesquisas e interações da página -->
     <script src="js/script-encontrepet.js" defer></script>
 </head>
 
 <body id="topo">
+    <!-- Cabeçalho com menu de navegação -->
     <header>
         <nav>
             <ul class="menu container flex">
@@ -36,10 +45,12 @@
     </header>
 
     <main>
+        <!-- Seção responsável por exibir os resultados da pesquisa -->
         <section>
 
             <h1 class="titulo-encontre">Encontre seu Pet:</h1>
 
+            <!-- Formulário de pesquisa por cidade e estado -->
             <form>
                 <div class="flex centralizar-conteudo">
                     <div class="flex campo-pesquisar">
@@ -79,26 +90,30 @@
                             <option value="TO">TO</option>
                         </select>
 
+                        <!-- Botão que inicia a pesquisa dos animais -->
                         <button onclick="pesquisarAnimais()" type="button" class="botao"
                             id="pesquisar">Pesquisar</button>
                     </div>
                 </div>
 
             </form>
+            <!-- Área utilizada para exibir mensagens de erro da pesquisa -->
             <div id="mensagem-erro"></div>
         </section>
 
         <section>
+            <!-- Área onde os animais encontrados são exibidos dinamicamente -->
             <div class="flex centralizar-conteudo animais" id="exibir_animais"></div>
             <div id="mensagem-vazia"></div>
         </section>
 
+        <!-- Janela modal para confirmar se o animal foi adotado -->
         <div id="modal-adotado" class="modal">
             <div class="caixa-modal">
                 <h2>Confirmação</h2>
 
                 <p>Esse animal foi adotado? ❤️</p>
-
+                <!-- Botões de confirmação da ação -->
                 <div class="botoes-modal">
                     <button id="confirmar" class="botao">Sim</button>
 
@@ -110,7 +125,7 @@
         </div>
 
     </main>
-
+    <!-- Rodapé com informações institucionais, links rápidos e redes sociais -->
     <footer class="rodape container">
         <div class="texto-footer">
             <p>Todos os direitos reservados</p><br>
@@ -137,6 +152,10 @@
                     <h2 class="subtitulo-footer">Redes</h2>
                     <a href="https://github.com/JulianaMiranda02" target="_blank" rel="noopener noreferrer">
                         <img src="img/github.png" alt="GitHub" width="20"></a>
+
+                    <a href="https://www.instagram.com/petnest.social/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/instagram-logo-com.svg" alt="Instagram">
+                    </a>
                 </div>
             </div>
         </div>
@@ -145,7 +164,7 @@
             <p>Ajudar animais abandonados e promover adoção responsável.</p><br>
         </div>
     </footer>
-
+    <!-- Botão que permite retornar rapidamente ao topo da página -->
     <a href="#topo" class="voltar-topo">
         ↑
     </a>

@@ -1,8 +1,8 @@
-/* ================= RESPONSIVIDADE GLOBAL ================= */
+/* ===================== Responsividade para telas de até 768px ===================== */
 
 @media (max-width: 768px) {
 
-    /* CONTAINER */
+   /* ===================== Container ===================== */
     .container {
         padding: 0 15px;
     }
@@ -11,7 +11,7 @@
         scroll-padding-top: 175px;
     }
 
-    /* ================= MENU ================= */
+    /* ===================== Menu ===================== */
 
     .menu {
         flex-direction: column;
@@ -28,7 +28,7 @@
         margin-bottom: 8px;
     }
 
-    /* ================= SEÇÃO PRINCIPAL ================= */
+   /* ===================== Cards da Seção Adotar ===================== */
 
     .principal {
         flex-direction: column;
@@ -42,7 +42,7 @@
         max-width: 250px;
     }
 
-    /* ================= SEÇÃO CÍRCULOS ================= */
+/* ===================== Seção Círculos ===================== */
 
     section.flex {
         flex-wrap: wrap;
@@ -54,14 +54,14 @@
         height: auto;
     }
 
-    /* ================= SOBRE ================= */
+/* ===================== Sobre ===================== */
 
     .secao-video iframe {
         width: 100%;
         height: auto;
     }
 
-    /* ================= FORMULÁRIO ================= */
+    /* ===================== Formulário ===================== */
 
     .formulario {
         padding: 15px;
@@ -78,7 +78,7 @@
         width: 90%;
     }
 
-    /* ================= FOOTER ================= */
+    /* ===================== Rodapé ===================== */
 
     .container-link {
         flex-direction: column;
@@ -86,7 +86,7 @@
         align-items: center;
     }
 
-    /* ================= ENCONTRE PET ================= */
+     /* ===================== Encontre Pet ===================== */
 
     .campo-pesquisar {
         flex-direction: column;

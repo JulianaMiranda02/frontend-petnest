@@ -2,26 +2,30 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Configurações iniciais da página, como idioma, codificação de caracteres e adaptação para dispositivos móveis -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Informações para mecanismos de busca (SEO) -->
     <meta name="description" content="Plataforma para adoção de animais e sinalização de pets abandonados.">
     <meta name="keywords" content="adoção de pets, animais abandonados, cachorro, gato, adoção responsável">
 
     <title>PetNest</title>
+    <!-- Importação das folhas de estilo responsáveis pela aparência e responsividade do site -->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="stylesheet" href="css/responsive.css" type="text/css">
-
+    <!-- Importação das fontes utilizadas para padronizar a identidade visual da aplicação -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
+    <!-- Arquivo JavaScript responsável pelas funcionalidades e interações da página -->
     <script src="/js/script-index.js" defer></script>
 </head>
 
 
 <body id="topo">
+    <!-- Cabeçalho contendo o menu principal de navegação entre as seções do site -->
     <header>
         <nav>
             <ul class="menu container flex">
@@ -41,6 +45,7 @@
     </header>
 
     <main class="conteudo container">
+        <!-- Seção de apresentação da plataforma, destacando sua proposta e identidade visual -->
         <section class="bem-vindo">
 
             <div class="principal flex">
@@ -56,11 +61,11 @@
                 </div>
             </div>
         </section>
-
+        <!-- Seção destinada a conscientizar os visitantes sobre a importância da adoção responsável -->
         <section id="adote">
             <h2 class="adotar">Por que Adotar?</h2>
         </section>
-
+        <!-- Cards informativos apresentando benefícios e motivos para incentivar a adoção de animais -->
         <section class="flex">
             <article>
                 <div class="circulo flex">
@@ -107,17 +112,14 @@
 
 
         </section>
-
+        <!-- Botão que direciona o usuário para a página de busca de animais disponíveis para adoção -->
         <div class="flex botao-adote-alinhar">
             <a href="encontrepet.html" class="botao">Adote</a>
         </div>
-
+        <!-- Seção que apresenta a missão, os objetivos e os valores da plataforma PetNest -->
         <section id="sobre" class="cor-de-fundo-da-pagina">
             <div class="texto-da-secao-sobre">
-                <h4>Sobre Nós</h4>
-
-                <br>
-
+                <h4>Sobre Nós</h4><br>
                 <p>A PetNest nasceu com o propósito de criar um espaço onde pets encontrem cuidado, carinho e informação
                     de qualidade.</p><br>
 
@@ -138,6 +140,7 @@
             </div>
 
             <div class="flex secao-video">
+                <!-- Vídeo educativo sobre abandono e conscientização em relação aos animais -->
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/rFiZEm0ww8k?si=l-scI7546DiM-h9R"
                     title="YouTube video player" style="border:0;"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -145,32 +148,32 @@
             </div>
         </section>
 
-        <!-- formulario com os campo para sinalizar -->
+        <!-- Formulário utilizado para registrar informações sobre animais em situação de abandono -->
         <section id="sinalizar" class="cor-de-fundo-da-pagina">
             <div class="flex image-sinalizar">
                 <img src="img/icone-sinalizar.png" alt="Bandeira de sinalizar" width="50" height="50">
                 <h4>Sinalizar</h4>
             </div>
 
+            <!-- Formulário de cadastro -->
             <form id="form_cadastro" name="cadastro" method="post">
-                <!-- campos de botoes -->
-
+                <!-- Campo destinado ao preenchimento das principais informações do animal sinalizado -->
                 <fieldset id="dados-basicos" class="formulario">
                     <legend class="titulo-form">Dados básicos</legend>
 
                     <div class="elementos-do-form">
                         <label for="name" class="nome-da-caixa">Nome</label>
-
+                        <!-- Campo para identificação da pessoa responsável pela sinalização -->
                         <input type="text" name="nome" placeholder="Nome e Sobrenome" required id="name"
                             class="caixa-input">
                     </div>
-
+                    <!-- Campo para contato com a pessoa que realizou a sinalização -->
                     <div class="elementos-do-form">
                         <label for="telefone" class="nome-da-caixa">Telefone</label>
-                        <input type="tel" id="telefone" name="telefone" placeholder="99-99999-9999" required
-                            pattern="\d{2}-\d{5}-\d{4}" class="caixa-input">
+                        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999"
+                            class="caixa-input" pattern="^\(\d{2}\)\s\d{4,5}-\d{4}$" required>
                     </div>
-
+                    <!-- Seleção do sexo do animal -->
                     <div class="elementos-do-form">
                         <label for="sexo" class="nome-da-caixa">Sexo</label>
                         <select required id="sexo" name="sexo" class="caixa-input">
@@ -179,7 +182,7 @@
                             <option value="F">Fêmea</option>
                         </select>
                     </div>
-
+                    <!-- Seleção da espécie do animal (cachorro ou gato) -->
                     <div class="elementos-do-form">
                         <label for="tipo" class="nome-da-caixa">Tipo</label>
                         <select required id="tipo" name="tipo" class="caixa-input">
@@ -188,7 +191,7 @@
                             <option value="cachorro">Cachorro</option>
                         </select>
                     </div>
-
+                    <!-- Definição do porte físico do animal -->
                     <div class="elementos-do-form">
                         <label class="nome-da-caixa">Porte</label>
                         <div class="flex opcoes-porte">
@@ -200,7 +203,7 @@
                             </select>
                         </div>
                     </div>
-
+                    <!-- Campo para informar características, estado de saúde e localização onde o animal foi encontrado -->
                     <div class="elementos-do-form">
                         <label for="descricao" class="nome-da-caixa">Descrição</label>
                         <textarea required class="descricao-da-caixa" id="descricao" name="descricao" rows="6" cols="40"
@@ -208,7 +211,7 @@
                             placeholder="Descreva o animal: aparência, estado de saúde, comportamento, local onde foi visto..."></textarea>
                         <small id="contador-descricao">0 / 300 caracteres</small>
                     </div>
-
+                    <!-- Campo para envio da imagem do animal, facilitando sua identificação -->
                     <div class="elementos-do-form">
                         <label class="nome-da-caixa">Foto do pet</label>
 
@@ -218,7 +221,7 @@
                         <img id="preview" alt="Imagem de pré-visualização" src=".">
                     </div>
                 </fieldset>
-
+                <!-- Informações sobre o local onde o animal foi encontrado -->
                 <fieldset id="localizacao" class="formulario">
                     <legend class="titulo-form">Localização</legend>
 
@@ -282,23 +285,25 @@
 
                     <div class="elementos-do-form">
                         <label for="cep" class="nome-da-caixa">CEP</label>
-                        <input type="text" id="cep" name="cep" maxlength="9" placeholder="00000-000" class="caixa-input"
-                            pattern="\d{5}-\d{3}" required>
+                        <input type="text" id="cep" name="cep" pattern="^\d{5}-\d{3}$" placeholder="00000-000" class="caixa-input"
+                            required>
                     </div>
                 </fieldset>
+                <!-- Botões para enviar os dados preenchidos ou limpar o formulário -->
                 <div class="flex botao-formulario">
                     <button type="submit" id="sinalizar-animal" class="botao bnt-form">Enviar</button>
                     <button type="reset" class="botao bnt-form" id="btn-limpar">Limpar</button>
                 </div>
             </form>
+            <!-- Mensagens exibidas ao usuário após a tentativa de envio do formulário -->
             <div id="mensagem-sucesso" class="mensagem-sucesso">
                 Formulário enviado com sucesso!
             </div>
             <div id="mensagem-erro" class="mensagem-erro">
-               Não foi possível sinalizar o animal.
+                Não foi possível sinalizar o animal.
             </div>
         </section>
-
+        <!-- Seção de perguntas frequentes para esclarecer as principais dúvidas dos usuários -->
         <section id="perguntas">
             <h4 class="titulo-de-perguntas">Perguntas Frequentes (FAQ)</h4>
 
@@ -340,13 +345,14 @@
         </section>
 
     </main>
-
+    <!-- Rodapé contendo informações institucionais, links úteis e redes sociais -->
     <footer class="rodape container">
         <div class="texto-footer">
             <p>Todos os direitos reservados</p><br>
             <p>&copy; 2026 - PetNest</p><br>
             <p>Desenvolvido por Juliana Miranda | Estudante de Tecnologia</p>
         </div>
+        <!-- Links de navegação rápida para as principais seções do site -->
         <div class="flex container-link">
             <div class="centralizar-link">
                 <h5 class="subtitulo-footer">Links</h5>
@@ -361,16 +367,21 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Acesso às redes sociais oficiais da plataforma -->
             <div class="redes">
                 <div class="imagem-github">
                     <h5 class="subtitulo-footer">Redes</h5>
                     <a href="https://github.com/JulianaMiranda02" target="_blank" rel="noopener noreferrer">
                         <img src="img/github.png" alt="GitHub"></a>
+
+                    <a href="https://www.instagram.com/petnest.social/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/instagram-logo-com.svg" alt="Instagram">
+                    </a>
                 </div>
             </div>
         </div>
         <div class="centralizar-missao">
+            <!-- Mensagem que resume a missão e o propósito da plataforma -->
             <p>Nossa Missão:</p><br>
             <p>Ajudar animais abandonados e promover adoção responsável.</p><br>
         </div>
