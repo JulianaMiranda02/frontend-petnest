@@ -2,6 +2,15 @@
 <html lang="pt-br">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CZMPNSSSFN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-CZMPNSSSFN');
+    </script>
     <!-- Configurações iniciais da página, como idioma, codificação de caracteres e adaptação para dispositivos móveis -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +31,6 @@
     <!-- Arquivo JavaScript responsável pelas funcionalidades e interações da página -->
     <script src="/js/script-index.js" defer></script>
 </head>
-
 
 <body id="topo">
     <!-- Cabeçalho contendo o menu principal de navegação entre as seções do site -->
@@ -285,8 +293,8 @@
 
                     <div class="elementos-do-form">
                         <label for="cep" class="nome-da-caixa">CEP</label>
-                        <input type="text" id="cep" name="cep" pattern="^\d{5}-\d{3}$" placeholder="00000-000" class="caixa-input"
-                            required>
+                        <input type="text" id="cep" name="cep" pattern="^\d{5}-\d{3}$" placeholder="00000-000"
+                            class="caixa-input" required>
                     </div>
                 </fieldset>
                 <!-- Botões para enviar os dados preenchidos ou limpar o formulário -->
