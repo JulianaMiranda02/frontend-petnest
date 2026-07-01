@@ -1,3 +1,4 @@
+const botaoPesquisar = document.getElementById("pesquisar");
 
 // Remove um animal da lista após a confirmação do usuário
 function deletarAnimal(id) {
@@ -16,6 +17,7 @@ function deletarAnimal(id) {
             })
         })
             .then(() => {
+
                 // Remove o card do animal da página após a exclusão
                 const divAnimal = document.getElementById(`div-animal-${id}`);
 
@@ -64,12 +66,20 @@ function pesquisarAnimais() {
     console.log(cidade);
     console.log(estado);
 
+    // Indica que o campo esta sendo pesquisado
+    botaoPesquisar.disabled = true;
+    botaoPesquisar.textContent = "Pesquisando...";
+
     // Consulta a API para buscar os animais cadastrados na região informada
     fetch(`https://z6ix40n36f.execute-api.sa-east-1.amazonaws.com/prod/animais-perdidos?cidade=${cidade}&estado=${estado}`, {
         method: "GET",
     })
         .then(resposta => resposta.json())
         .then((animais_perdidos) => {
+
+            // Restaura o botão
+            botaoPesquisar.disabled = false;
+            botaoPesquisar.textContent = "Pesquisar";
 
             const mensagem = document.getElementById("mensagem-vazia");
 
@@ -132,6 +142,10 @@ function pesquisarAnimais() {
         })
         // Exibe o erro no console caso a consulta à API falhe
         .catch(error => {
+
+            botaoPesquisar.disabled = false;
+            botaoPesquisar.textContent = "Pesquisar";
+
             console.log("Erro:", error);
         });
 
