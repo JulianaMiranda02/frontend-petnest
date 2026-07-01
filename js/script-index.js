@@ -2,6 +2,7 @@
 const input = document.getElementById("meufile");
 const preview = document.getElementById("preview");
 const botaoLimpar = document.getElementById("btn-limpar");
+const botaoEnviar = document.getElementById("sinalizar-animal");
 
 
 // Aplica a máscara de telefone automaticamente durante a digitação
@@ -128,6 +129,10 @@ form_cadastro.addEventListener("submit", async (evento) => {
 
     }
 
+    // Indica que o formulário está sendo enviado
+    botaoEnviar.disabled = true;
+    botaoEnviar.textContent = "Enviando...";
+
     // Envia os dados do formulário para a API utilizando o método POST
     fetch("https://z6ix40n36f.execute-api.sa-east-1.amazonaws.com/prod/sinalizar-animal", {
         method: "POST",
@@ -139,6 +144,10 @@ form_cadastro.addEventListener("submit", async (evento) => {
         )
     })
         .then(resposta => {
+            // Restaura o botão
+            botaoEnviar.disabled = false;
+            botaoEnviar.textContent = "Enviar";
+
             if (!resposta.ok) {
                 mostraMensagemDeErro()
                 return;
@@ -157,6 +166,8 @@ form_cadastro.addEventListener("submit", async (evento) => {
                 mensagemSucesso.style.display = "none";
             }, 4000);
         }).catch(() => {
+            botaoEnviar.disabled = false;
+            botaoEnviar.textContent = "Enviar";
             mostraMensagemDeErro()
             return;
         })
